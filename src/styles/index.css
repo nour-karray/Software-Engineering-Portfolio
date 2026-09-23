@@ -466,10 +466,15 @@ h2 {
 
 .mobile-menu {
   display: none;
-  overflow: hidden;
+  max-height: calc(100vh - var(--nav-height));
+  max-height: calc(100dvh - var(--nav-height));
+  overflow-x: hidden;
+  overflow-y: auto;
   border-bottom: 1px solid var(--line);
   background: color-mix(in srgb, var(--surface) 94%, transparent);
   backdrop-filter: blur(20px);
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Hero */
