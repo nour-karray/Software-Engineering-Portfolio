@@ -86,6 +86,15 @@ const skillColors = {
   "python-data": "#3b78b7",
 };
 
+function skillCategoryId(category) {
+  return category
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 function Skills() {
   const { t } = useLanguage();
   const categories = Object.keys(skills);
@@ -124,6 +133,8 @@ function Skills() {
               type="button"
               key={category}
               role="tab"
+              id={`skill-tab-${skillCategoryId(category)}`}
+              aria-controls={`skill-panel-${skillCategoryId(category)}`}
               aria-selected={active === category}
               className={active === category ? "active" : ""}
               onClick={() => handleTabClick(category)}
@@ -137,6 +148,9 @@ function Skills() {
           <motion.div
             className="skill-showcase"
             key={active}
+            role="tabpanel"
+            id={`skill-panel-${skillCategoryId(active)}`}
+            aria-labelledby={`skill-tab-${skillCategoryId(active)}`}
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 12 }}

@@ -1,3 +1,5 @@
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const translations = {
   fr: {
     language: {
@@ -146,6 +148,18 @@ export const translations = {
             "Projet de fouille de données visant à prédire la probabilité de sinistre habitation à partir de données réelles.",
           category: "IA / Data",
         },
+        7: {
+          title: "Plateforme de gestion des missions",
+          description:
+            "Plateforme de planification des missions et d’affectation des employés avec authentification JWT, contrôle d’accès par rôle et règles métier transactionnelles.",
+          category: "Web",
+        },
+        8: {
+          title: "Entrepôt de données HR Analytics",
+          description:
+            "Projet BI transformant des données RH CSV en entrepôt SQL Server via SSIS, puis en indicateurs et tableaux de bord Blazor.",
+          category: "BI / Data",
+        },
       },
     },
     experience: {
@@ -222,13 +236,13 @@ export const translations = {
           title: "CCNA 1 — Cisco Certified Network Associate",
           issuer: "Introduction to Networks",
           short: "CISCO",
-          image: "/images/certificates/ccna-presentation-reseaux.jpg",
+            image: asset("images/certificates/ccna-presentation-reseaux.jpg"),
         },
         {
           title: "National Microsoft Technologies Camps Tunisia",
           issuer: "Microsoft Technologies Camp",
           short: "MS",
-          image: "/images/certificates/nmtc-certificate.jpg",
+            image: asset("images/certificates/nmtc-certificate.jpg"),
         },
       ],
       languages: [
@@ -437,6 +451,18 @@ export const translations = {
             "Data mining project designed to predict home claim probability from real-world data.",
           category: "AI / Data",
         },
+        7: {
+          title: "Mission Management Platform",
+          description:
+            "Mission planning and employee assignment platform with JWT authentication, role-based access control and transactional business rules.",
+          category: "Web",
+        },
+        8: {
+          title: "HR Analytics Data Warehouse",
+          description:
+            "BI project that transforms HR CSV data into a SQL Server warehouse through SSIS, then presents KPIs and dashboards in Blazor.",
+          category: "BI / Data",
+        },
       },
     },
     experience: {
@@ -513,13 +539,13 @@ export const translations = {
           title: "CCNA 1 — Cisco Certified Network Associate",
           issuer: "Introduction to Networks",
           short: "CISCO",
-          image: "/images/certificates/ccna-presentation-reseaux.jpg",
+            image: asset("images/certificates/ccna-presentation-reseaux.jpg"),
         },
         {
           title: "National Microsoft Technologies Camps Tunisia",
           issuer: "Microsoft Technologies Camp",
           short: "MS",
-          image: "/images/certificates/nmtc-certificate.jpg",
+            image: asset("images/certificates/nmtc-certificate.jpg"),
         },
       ],
       languages: [
