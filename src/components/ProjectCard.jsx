@@ -17,7 +17,7 @@ function ProjectCard({ project, index, labels }) {
       whileHover={{ y: -8 }}
     >
       <div className="project-card__cover">
-        <img src={project.cover} alt={coverAlt} loading="lazy" />
+        <img src={project.cover} alt={coverAlt} width="1200" height="675" loading="lazy" />
       </div>
 
       <div className="project-card__body">

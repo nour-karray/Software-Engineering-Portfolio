@@ -18,6 +18,8 @@ function About() {
             <img
               src={`${import.meta.env.BASE_URL}images/about-graduation.jpg`}
               alt="Nour El Houda Karray en tenue de graduation"
+              width="828"
+              height="1098"
               loading="lazy"
             />
           </div>

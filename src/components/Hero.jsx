@@ -103,13 +103,13 @@ function Hero() {
           </div>
 
           <div className="socials" aria-label={t.hero.socialsLabel}>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FiLinkedin />
             </a>
-            <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+            <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FiGithub />
             </a>
-            <a href={profile.emailLink} target="_blank" rel="noreferrer" aria-label="Email">
+            <a href={profile.emailLink} target="_blank" rel="noopener noreferrer" aria-label="Email">
               <FiMail />
             </a>
           </div>
@@ -117,13 +117,13 @@ function Hero() {
 
         <motion.div
           className="hero__visual"
-          initial={{ opacity: 0, scale: 0.92, x: 24 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.92, y: 24 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="hero__portrait-ring">
             <div className="hero__portrait">
-              <img src={profile.portrait} alt={t.hero.portraitAlt} />
+              <img src={profile.portrait} alt={t.hero.portraitAlt} width="666" height="957" />
             </div>
           </div>
           <motion.div

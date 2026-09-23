@@ -105,6 +105,21 @@ function Skills() {
     setActive(category);
   };
 
+  const handleTabKeyDown = (event, index) => {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+
+    event.preventDefault();
+    let nextIndex = index;
+    if (event.key === "ArrowLeft") nextIndex = (index - 1 + categories.length) % categories.length;
+    if (event.key === "ArrowRight") nextIndex = (index + 1) % categories.length;
+    if (event.key === "Home") nextIndex = 0;
+    if (event.key === "End") nextIndex = categories.length - 1;
+
+    const nextCategory = categories[nextIndex];
+    setActive(nextCategory);
+    document.getElementById(`skill-tab-${skillCategoryId(nextCategory)}`)?.focus();
+  };
+
   return (
     <section className="section skills" id="competences">
       <div className="container">
@@ -138,6 +153,8 @@ function Skills() {
               aria-selected={active === category}
               className={active === category ? "active" : ""}
               onClick={() => handleTabClick(category)}
+              onKeyDown={(event) => handleTabKeyDown(event, categories.indexOf(category))}
+              tabIndex={active === category ? 0 : -1}
             >
               {t.skills.categoryLabels[category] ?? category}
             </button>

@@ -13,13 +13,13 @@ function Footer() {
         </button>
         <p className="footer__copyright">© 2026 Karray nour el houda</p>
         <div className="footer__socials">
-          <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FiLinkedin />
           </a>
-          <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+          <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FiGithub />
           </a>
-          <a href={profile.emailLink} target="_blank" rel="noreferrer" aria-label="Email">
+          <a href={profile.emailLink} target="_blank" rel="noopener noreferrer" aria-label="Email">
             <FiMail />
           </a>
         </div>
