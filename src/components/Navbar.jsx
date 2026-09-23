@@ -36,6 +36,27 @@ function Navbar({ theme, onToggleTheme }) {
     };
   }, [navigation]);
 
+  useEffect(() => {
+    const closeMenu = () => setMenuOpen(false);
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") closeMenu();
+    };
+    const desktopQuery = window.matchMedia("(min-width: 1081px)");
+    const onDesktopChange = (event) => {
+      if (event.matches) closeMenu();
+    };
+
+    document.body.classList.toggle("menu-open", menuOpen);
+    window.addEventListener("keydown", onKeyDown);
+    desktopQuery.addEventListener("change", onDesktopChange);
+
+    return () => {
+      document.body.classList.remove("menu-open");
+      window.removeEventListener("keydown", onKeyDown);
+      desktopQuery.removeEventListener("change", onDesktopChange);
+    };
+  }, [menuOpen]);
+
   const navigateTo = (id) => {
     const delay = menuOpen ? 220 : 0;
     setMenuOpen(false);
@@ -107,6 +128,7 @@ function Navbar({ theme, onToggleTheme }) {
             className="icon-button menu-toggle"
             aria-label={menuOpen ? t.menu.close : t.menu.open}
             aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
             onClick={() => setMenuOpen((open) => !open)}
           >
             {menuOpen ? <FiX /> : <FiMenu />}
@@ -118,6 +140,7 @@ function Navbar({ theme, onToggleTheme }) {
         {menuOpen && (
           <motion.nav
             className="mobile-menu"
+            id="mobile-navigation"
             aria-label={t.menu.mobile}
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}

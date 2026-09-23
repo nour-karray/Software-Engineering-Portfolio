@@ -14,6 +14,7 @@ Portfolio one-page bilingue présentant mon parcours, mes compétences et mes pr
 - Français et anglais avec préférence mémorisée
 - Thèmes clair et sombre
 - Navigation responsive et suivi de la section active
+- Mise en page testée du mobile 320 px aux grands écrans desktop
 - Filtres de projets, animations accessibles et téléchargement du CV
 - Liens vers les dépôts GitHub des projets disponibles
 
@@ -50,3 +51,9 @@ Vite utilise le chemin de base `/Software-Engineering-Portfolio/`. Le build prod
 https://nour-karray.github.io/Software-Engineering-Portfolio/
 
 La CI exécute automatiquement `npm ci`, `npm run lint` et `npm run build` sur chaque push et pull request. La publication GitHub Pages doit être activée dans les paramètres du dépôt si elle ne l’est pas encore.
+
+## Sécurité frontend
+
+Ce dépôt ne doit contenir aucun secret. Toutes les variables préfixées par `VITE_` sont intégrées au bundle et deviennent publiques dans le navigateur. Une clé privée destinée à une API doit être conservée dans un backend ou une fonction serverless, jamais dans React. Le fichier `.env.example` ne contient que de la documentation et des valeurs fictives.
+
+Le portfolio publie volontairement les coordonnées professionnelles, la localisation générale et le CV présents dans `src/data/portfolioData.js` et `public/`.

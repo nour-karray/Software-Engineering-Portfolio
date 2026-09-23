@@ -80,7 +80,7 @@ function Contact() {
                     <a
                       href={item.href}
                       target={item.external ? "_blank" : undefined}
-                      rel={item.external ? "noreferrer" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
                     >
                       {content}
                     </a>
@@ -96,7 +96,7 @@ function Contact() {
             className="contact__cta"
             href={profile.emailLink}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.98 }}
           >

@@ -35,8 +35,8 @@ function ExperienceTimeline() {
             <motion.article
               className="timeline-item"
               key={`${experience.company}-${experience.period}`}
-              initial={{ opacity: 0, x: 36 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.35 }}
               transition={{ delay: index * 0.12, duration: 0.58, ease: [0.22, 1, 0.36, 1] }}
             >
