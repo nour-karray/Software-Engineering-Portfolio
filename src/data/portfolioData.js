@@ -1,3 +1,5 @@
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const profile = {
   name: "Nour El Houda Karray",
   firstName: "Nour",
@@ -17,12 +19,12 @@ export const profile = {
   phone: "+216 24 634 008",
   email: "karraynour2002@gmail.com",
   linkedin: "https://www.linkedin.com/in/karray-nour-el-houda",
-  github: "https://github.com",
+  github: "https://github.com/nour-karray",
   location: "Sfax, Tunisie",
   availability: "Ouverte aux opportunités",
-  portrait: "/images/nour-portrait.webp",
-  cv: "/cv-nour-el-houda-karray.pdf",
-  emailLink: "https://mail.google.com/mail/?view=cm&fs=1&to=karraynour2002%40gmail.com",
+  portrait: asset("images/nour-portrait.webp"),
+  cv: asset("cv-nour-el-houda-karray.pdf"),
+  emailLink: "mailto:karraynour2002@gmail.com",
 };
 
 export const navigation = [
@@ -217,8 +219,8 @@ export const projects = [
       "Gemini API",
       "Google Sign-In",
     ],
-    cover: "/images/projects/smartscan-mlkit.svg",
-    github: "https://github.com/nour-karray/smartscan_mlkit",
+    cover: asset("images/projects/smartscan-mlkit.svg"),
+    github: "https://github.com/nour-karray/smartscan-medical-ocr",
     visual: "mobile-ai",
   },
   {
@@ -239,8 +241,8 @@ export const projects = [
       "Factory",
       "Command",
     ],
-    cover: "/images/projects/drawing-javafx.svg",
-    github: "",
+    cover: asset("images/projects/drawing-javafx.svg"),
+    github: "https://github.com/nour-karray/javafx-design-patterns",
     visual: "java-architecture",
   },
   {
@@ -251,8 +253,8 @@ export const projects = [
     description:
       "Projet de Fin d’Année autour d’une plateforme capable d’extraire automatiquement des informations depuis des documents PDF et images pour produire des données structurées et exploitables.",
     technologies: ["Python", "JavaScript", "OCR", "IA", "Data extraction"],
-    cover: "/images/projects/docuai-dashboard.png",
-    github: "",
+    cover: asset("images/projects/docuai-dashboard.png"),
+    github: "https://github.com/nour-karray/AI-Document-Extractor",
     visual: "document-ai",
   },
   {
@@ -263,7 +265,7 @@ export const projects = [
     description:
       "Application web de gestion et de délivrance de prescriptions électroniques pour les pharmaciens.",
     technologies: ["ASP.NET Web API", "Entity Framework", "Blazor", "SQL Server"],
-    cover: "/images/projects/e-sante.png",
+    cover: asset("images/projects/e-sante.webp"),
     github: "",
     visual: "health",
   },
@@ -275,7 +277,7 @@ export const projects = [
     description:
       "Application web permettant de créer, gérer et suivre des événements avec inscription des utilisateurs.",
     technologies: ["Laravel", "MySQL"],
-    cover: "/images/projects/event-planner.png",
+    cover: asset("images/projects/event-planner.webp"),
     github: "",
     visual: "event",
   },
@@ -287,9 +289,33 @@ export const projects = [
     description:
       "Projet de fouille de données visant à prédire la probabilité de sinistre habitation à partir de données réelles.",
     technologies: ["Python", "Scikit-learn"],
-    cover: "/images/projects/prediction-sinistre.png",
+    cover: asset("images/projects/prediction-sinistre.webp"),
     github: "",
     visual: "data",
+  },
+  {
+    id: 7,
+    title: "Mission Management Platform",
+    year: "2026",
+    category: "Web",
+    description:
+      "Plateforme de planification des missions et d’affectation des employés avec authentification JWT, contrôle d’accès par rôle et règles métier transactionnelles.",
+    technologies: ["Java 21", "Spring Boot 3", "Spring Security", "Angular 19", "MySQL", "JWT"],
+    cover: asset("images/projects/document-extraction.svg"),
+    github: "https://github.com/nour-karray/J2ee",
+    visual: "mission-management",
+  },
+  {
+    id: 8,
+    title: "HR Analytics Data Warehouse",
+    year: "2026",
+    category: "BI / Data",
+    description:
+      "Projet BI transformant des données RH CSV en entrepôt SQL Server via SSIS, puis en indicateurs et tableaux de bord Blazor.",
+    technologies: ["SQL Server", "SSIS", "PowerShell", "C#", "Blazor", "MudBlazor", "ApexCharts"],
+    cover: asset("images/projects/docuai-dashboard.png"),
+    github: "https://github.com/nour-karray/HR-Analytics-Data-Warehouse",
+    visual: "hr-analytics",
   },
 ];
 
@@ -356,13 +382,13 @@ export const certificates = [
     title: "CCNA 1 — Cisco Certified Network Associate",
     issuer: "Introduction to Networks",
     short: "CISCO",
-    image: "/images/certificates/ccna-presentation-reseaux.jpg",
+    image: asset("images/certificates/ccna-presentation-reseaux.jpg"),
   },
   {
     title: "National Microsoft Technologies Camps Tunisia",
     issuer: "Microsoft Technologies Camp",
     short: "MS",
-    image: "/images/certificates/nmtc-certificate.jpg",
+    image: asset("images/certificates/nmtc-certificate.jpg"),
   },
 ];
 

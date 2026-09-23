@@ -16,7 +16,7 @@ function About() {
         >
           <div className="about__illustration">
             <img
-              src="/images/about-graduation.jpg"
+              src={`${import.meta.env.BASE_URL}images/about-graduation.jpg`}
               alt="Nour El Houda Karray en tenue de graduation"
               loading="lazy"
             />

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import {
   FiArrowDown,
   FiArrowDownRight,
@@ -57,6 +57,7 @@ function useTyping(words) {
 
 function Hero() {
   const { t } = useLanguage();
+  const reduceMotion = useReducedMotion();
   const typedText = useTyping(t.hero.statuses);
 
   return (
@@ -127,22 +128,22 @@ function Hero() {
           </div>
           <motion.div
             className="floating-tag floating-tag--top"
-            animate={{ y: [0, -9, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            animate={reduceMotion ? undefined : { y: [0, -9, 0] }}
+            transition={reduceMotion ? undefined : { duration: 4, repeat: Infinity, ease: "easeInOut" }}
           >
             <span>✦</span> {t.hero.creative}
           </motion.div>
           <motion.div
             className="floating-tag floating-tag--bottom"
-            animate={{ y: [0, 9, 0] }}
-            transition={{ duration: 4.6, repeat: Infinity, ease: "easeInOut" }}
+            animate={reduceMotion ? undefined : { y: [0, 9, 0] }}
+            transition={reduceMotion ? undefined : { duration: 4.6, repeat: Infinity, ease: "easeInOut" }}
           >
             <span className="status-dot" /> {t.hero.availability}
           </motion.div>
           <motion.div
             className="floating-tag floating-tag--side"
-            animate={{ x: [0, 8, 0] }}
-            transition={{ duration: 4.3, repeat: Infinity, ease: "easeInOut" }}
+            animate={reduceMotion ? undefined : { x: [0, 8, 0] }}
+            transition={reduceMotion ? undefined : { duration: 4.3, repeat: Infinity, ease: "easeInOut" }}
           >
             <span className="motivation-dot" /> {t.hero.motivated}
           </motion.div>
@@ -155,8 +156,8 @@ function Hero() {
         onClick={() =>
           document.getElementById("a-propos")?.scrollIntoView({ behavior: "smooth" })
         }
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
+        animate={reduceMotion ? undefined : { y: [0, 8, 0] }}
+        transition={reduceMotion ? undefined : { duration: 2, repeat: Infinity }}
       >
         {t.hero.scroll} <FiArrowDown />
       </motion.button>
