@@ -1275,6 +1275,16 @@ h2 {
   transform: scale(1.055);
 }
 
+.project-card__cover--contain {
+  background: #f5f3f8;
+}
+
+.project-card__cover--contain img,
+.project-card:hover .project-card__cover--contain img {
+  object-fit: contain;
+  transform: none;
+}
+
 .project-card__body {
   display: flex;
   flex: 1;
