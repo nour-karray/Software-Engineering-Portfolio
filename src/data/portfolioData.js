@@ -241,7 +241,8 @@ export const projects = [
       "Factory",
       "Command",
     ],
-    cover: asset("images/projects/drawing-javafx.svg"),
+    cover: asset("images/projects/drawing-javafx-app.png"),
+    coverFit: "contain",
     github: "https://github.com/nour-karray/javafx-design-patterns",
     visual: "java-architecture",
   },
@@ -265,7 +266,7 @@ export const projects = [
     description:
       "Application web de gestion et de délivrance de prescriptions électroniques pour les pharmaciens.",
     technologies: ["ASP.NET Web API", "Entity Framework", "Blazor", "SQL Server"],
-    cover: asset("images/projects/e-sante.webp"),
+    cover: asset("images/projects/e-sante-dashboard.png"),
     github: "",
     visual: "health",
   },
@@ -277,7 +278,7 @@ export const projects = [
     description:
       "Application web permettant de créer, gérer et suivre des événements avec inscription des utilisateurs.",
     technologies: ["Laravel", "MySQL"],
-    cover: asset("images/projects/event-planner.webp"),
+    cover: asset("images/projects/event-planner-dashboard.png"),
     github: "",
     visual: "event",
   },
@@ -289,7 +290,7 @@ export const projects = [
     description:
       "Projet de fouille de données visant à prédire la probabilité de sinistre habitation à partir de données réelles.",
     technologies: ["Python", "Scikit-learn"],
-    cover: asset("images/projects/prediction-sinistre.webp"),
+    cover: asset("images/projects/prediction-sinistre-dashboard.jpg"),
     github: "",
     visual: "data",
   },
@@ -301,7 +302,7 @@ export const projects = [
     description:
       "Plateforme de planification des missions et d’affectation des employés avec authentification JWT, contrôle d’accès par rôle et règles métier transactionnelles.",
     technologies: ["Java 21", "Spring Boot 3", "Spring Security", "Angular 19", "MySQL", "JWT"],
-    cover: asset("images/projects/document-extraction.svg"),
+    cover: asset("images/projects/mission-management-dashboard.png"),
     github: "https://github.com/nour-karray/J2ee",
     visual: "mission-management",
   },
@@ -313,7 +314,7 @@ export const projects = [
     description:
       "Projet BI transformant des données RH CSV en entrepôt SQL Server via SSIS, puis en indicateurs et tableaux de bord Blazor.",
     technologies: ["SQL Server", "SSIS", "PowerShell", "C#", "Blazor", "MudBlazor", "ApexCharts"],
-    cover: asset("images/projects/docuai-dashboard.png"),
+    cover: asset("images/projects/hr-analytics-dashboard.jpg"),
     github: "https://github.com/nour-karray/HR-Analytics-Data-Warehouse",
     visual: "hr-analytics",
   },
