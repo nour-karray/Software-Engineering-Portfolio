@@ -39,6 +39,7 @@ export const translations = {
     about: {
       eyebrow: "À propos de moi",
       title: "Qui suis-je ?",
+      portraitAlt: "Portrait de Nour El Houda Karray",
       paragraphs: [
         "Étudiante en génie informatique à l’IIT Sfax, je construis progressivement un profil polyvalent en développement logiciel et en intelligence artificielle. Mes projets me permettent de travailler sur différentes étapes d’une application : conception, développement frontend et backend, gestion des données, intégration de modèles d’IA et tests.",
         "J’apprécie particulièrement les projets où plusieurs technologies doivent être combinées pour répondre à un besoin concret. Je recherche aujourd’hui un stage PFE en 2027 afin de renforcer cette expérience au sein d’une équipe technique.",
@@ -375,6 +376,7 @@ export const translations = {
     about: {
       eyebrow: "About me",
       title: "Who am I?",
+      portraitAlt: "Portrait of Nour El Houda Karray",
       paragraphs: [
         "As a computer engineering student at IIT Sfax, I am progressively building a versatile profile in software development and artificial intelligence. My projects allow me to work across different stages of an application: design, frontend and backend development, data management, AI model integration, and testing.",
         "I particularly enjoy projects that combine several technologies to address a concrete need. I am currently seeking a 2027 final-year internship to strengthen this experience within a technical team.",

@@ -16,10 +16,10 @@ function About() {
         >
           <div className="about__illustration">
             <img
-              src={`${import.meta.env.BASE_URL}images/about-graduation.jpg`}
-              alt={t.hero.graduationAlt}
-              width="828"
-              height="1098"
+              src={`${import.meta.env.BASE_URL}images/about-portrait.webp`}
+              alt={t.about.portraitAlt}
+              width="1122"
+              height="1402"
               loading="lazy"
             />
           </div>
