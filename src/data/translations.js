@@ -252,11 +252,14 @@ export const translations = {
           title: "AI Fundamentals: Foundations for Understanding AI",
           issuer: "IBM",
           short: "IBM",
+          image: asset("images/certificates/ibm-ai-fundamentals.png"),
         },
         {
           title: "Scrum Fundamentals Certified (SFC)",
           issuer: "SCRUMstudy",
           short: "SFC",
+          image: asset("images/certificates/scrum-fundamentals-certified.png"),
+          document: asset("certificates/scrum-fundamentals-certified-nour-karray.pdf"),
         },
         {
           title: "CCNA: Introduction to Networks",
@@ -585,11 +588,14 @@ export const translations = {
           title: "AI Fundamentals: Foundations for Understanding AI",
           issuer: "IBM",
           short: "IBM",
+          image: asset("images/certificates/ibm-ai-fundamentals.png"),
         },
         {
           title: "Scrum Fundamentals Certified (SFC)",
           issuer: "SCRUMstudy",
           short: "SFC",
+          image: asset("images/certificates/scrum-fundamentals-certified.png"),
+          document: asset("certificates/scrum-fundamentals-certified-nour-karray.pdf"),
         },
         {
           title: "CCNA: Introduction to Networks",

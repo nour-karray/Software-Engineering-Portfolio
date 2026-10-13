@@ -81,6 +81,14 @@ describe("portfolio interactions", () => {
     expect(screen.getByText("Scrum Fundamentals Certified (SFC)")).toBeInTheDocument();
     expect(screen.getByText("CCNA: Introduction to Networks")).toBeInTheDocument();
     expect(screen.getByText("National Microsoft Technologies Camp Tunisia")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Voir le certificat AI Fundamentals/i })).toHaveAttribute(
+      "href",
+      expect.stringContaining("ibm-ai-fundamentals.png"),
+    );
+    expect(screen.getByRole("link", { name: /Voir le certificat Scrum Fundamentals/i })).toHaveAttribute(
+      "href",
+      expect.stringContaining("scrum-fundamentals-certified-nour-karray.pdf"),
+    );
   });
 
   it("keeps the critical CV and contact actions available", () => {

@@ -73,7 +73,7 @@ function Certificates() {
                   {certificate.image ? (
                     <a
                       className="credential-item__image"
-                      href={certificate.image}
+                      href={certificate.document ?? certificate.image}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${t.credentials.certificateView} ${certificate.title}`}
