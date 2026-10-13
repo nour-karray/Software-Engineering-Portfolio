@@ -33,7 +33,9 @@ export const translations = {
       socialsLabel: "Réseaux sociaux",
       portraitAlt: "Portrait professionnel de Nour El Houda Karray",
       graduationAlt: "Nour El Houda Karray lors de sa remise de diplôme",
+      creative: "Créative",
       availability: "Disponible pour un stage PFE 2027",
+      motivated: "Motivée",
       scroll: "Scroll",
     },
     about: {
@@ -370,7 +372,9 @@ export const translations = {
       socialsLabel: "Social links",
       portraitAlt: "Professional portrait of Nour El Houda Karray",
       graduationAlt: "Nour El Houda Karray at her graduation ceremony",
+      creative: "Creative",
       availability: "Available for a 2027 final-year internship",
+      motivated: "Motivated",
       scroll: "Scroll",
     },
     about: {

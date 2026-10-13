@@ -127,11 +127,25 @@ function Hero() {
             </div>
           </div>
           <motion.div
+            className="floating-tag floating-tag--top"
+            animate={reduceMotion ? undefined : { y: [0, -9, 0] }}
+            transition={reduceMotion ? undefined : { duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <span>✦</span> {t.hero.creative}
+          </motion.div>
+          <motion.div
             className="floating-tag floating-tag--bottom"
             animate={reduceMotion ? undefined : { y: [0, 9, 0] }}
             transition={reduceMotion ? undefined : { duration: 4.6, repeat: Infinity, ease: "easeInOut" }}
           >
             <span className="status-dot" /> {t.hero.availability}
+          </motion.div>
+          <motion.div
+            className="floating-tag floating-tag--side"
+            animate={reduceMotion ? undefined : { x: [0, 8, 0] }}
+            transition={reduceMotion ? undefined : { duration: 4.3, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <span className="motivation-dot" /> {t.hero.motivated}
           </motion.div>
         </motion.div>
       </div>
