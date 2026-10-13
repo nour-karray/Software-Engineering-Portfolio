@@ -24,9 +24,11 @@ import {
   SiMysql,
   SiPhp,
   SiPython,
+  SiPostgresql,
   SiReact,
   SiScikitlearn,
   SiSpringboot,
+  SiTypescript,
 } from "react-icons/si";
 import { skills } from "../data/portfolioData";
 import { useLanguage } from "../hooks/useLanguage.jsx";
@@ -35,6 +37,7 @@ const skillIcons = {
   html: SiHtml5,
   css: FaCss3Alt,
   javascript: SiJavascript,
+  typescript: SiTypescript,
   php: SiPhp,
   java: FaJava,
   python: SiPython,
@@ -47,6 +50,7 @@ const skillIcons = {
   api: FiServer,
   blazor: SiBlazor,
   mysql: SiMysql,
+  postgresql: SiPostgresql,
   mongodb: SiMongodb,
   sqlserver: SiDotnet,
   sql: FiDatabase,
@@ -66,6 +70,7 @@ const skillColors = {
   html: "#e85d35",
   css: "#3478f6",
   javascript: "#e9b82e",
+  typescript: "#3178c6",
   php: "#777bb4",
   java: "#d66b2f",
   python: "#3b78b7",
@@ -78,6 +83,7 @@ const skillColors = {
   api: "#5f6fd6",
   blazor: "#7b55c7",
   mysql: "#327899",
+  postgresql: "#336791",
   mongodb: "#4c9b52",
   sqlserver: "#c44d5c",
   sql: "#6f7d91",

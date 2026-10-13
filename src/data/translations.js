@@ -3,8 +3,8 @@ const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 export const translations = {
   fr: {
     meta: {
-      title: "Nour El Houda Karray | Génie logiciel, Data & IA",
-      description: "Portfolio de Nour El Houda Karray, étudiante en 3e année GLID à l’IIT Sfax, à la recherche d’un stage PFE en 2027 en développement logiciel, data ou IA.",
+      title: "Nour El Houda Karray | Génie informatique & IA",
+      description: "Portfolio de Nour El Houda Karray, étudiante en génie informatique à l’IIT Sfax, à la recherche d’un stage PFE en 2027 en développement logiciel ou intelligence artificielle.",
     },
     language: {
       label: "Choix de langue",
@@ -14,40 +14,34 @@ export const translations = {
     navigation: [
       { label: "Accueil", id: "accueil" },
       { label: "À propos", id: "a-propos" },
-      { label: "Compétences", id: "competences" },
       { label: "Projets", id: "projets" },
       { label: "Expériences", id: "experiences" },
+      { label: "Compétences", id: "competences" },
       { label: "Formation", id: "formation" },
       { label: "Certificats", id: "certificats" },
       { label: "Contact", id: "contact" },
     ],
     hero: {
       greeting: "Bonjour, je suis",
-      role: "Étudiante en 3e année GLID — IIT Sfax",
-      statuses: [
-        "Développement logiciel & full-stack",
-        "Intelligence artificielle & Machine Learning",
-        "Data Engineering & Business Intelligence",
-      ],
+      role: "Étudiante en génie informatique — IIT Sfax",
+      statuses: ["Développement logiciel", "Intelligence artificielle"],
       summary:
-        "Passionnée par le développement logiciel et l’intelligence artificielle, je m’investis dans la conception de solutions innovantes et concrètes. Je recherche un stage PFE en 2027 pour renforcer mes compétences et contribuer à des projets à forte valeur ajoutée.",
+        "Étudiante en génie informatique à l’IIT Sfax, je développe mes compétences à travers des projets concrets en développement logiciel et en intelligence artificielle. Je recherche un stage PFE en 2027 afin de mettre mes acquis en pratique et de poursuivre ma progression au sein d’une équipe technique.",
       projectsButton: "Voir mes projets",
       cvButton: "Télécharger mon CV",
       cvDownloadName: "cv-nour-el-houda-karray.pdf",
       socialsLabel: "Réseaux sociaux",
       portraitAlt: "Portrait professionnel de Nour El Houda Karray",
       graduationAlt: "Nour El Houda Karray lors de sa remise de diplôme",
-      creative: "Créative",
-      availability: "Recherche un stage PFE 2027",
-      motivated: "Motivée",
+      availability: "Disponible pour un stage PFE 2027",
       scroll: "Scroll",
     },
     about: {
       eyebrow: "À propos de moi",
       title: "Qui suis-je ?",
       paragraphs: [
-        "Étudiante en 3e année de Génie Logiciel et Informatique Décisionnelle (GLID) à l’IIT Sfax, je développe des applications full-stack et mobiles, des API sécurisées ainsi que des solutions d’extraction, d’analyse et de visualisation de données.",
-        "Mes projets associent React, Angular, Spring Boot, FastAPI, Flutter, SQL Server et des outils d’IA/OCR. Je recherche un stage PFE en 2027 pour participer à la conception et à la réalisation d’un produit logiciel au sein d’une équipe technique.",
+        "Étudiante en génie informatique à l’IIT Sfax, je construis progressivement un profil polyvalent en développement logiciel et en intelligence artificielle. Mes projets me permettent de travailler sur différentes étapes d’une application : conception, développement frontend et backend, gestion des données, intégration de modèles d’IA et tests.",
+        "J’apprécie particulièrement les projets où plusieurs technologies doivent être combinées pour répondre à un besoin concret. Je recherche aujourd’hui un stage PFE en 2027 afin de renforcer cette expérience au sein d’une équipe technique.",
       ],
       cta: "Discuter d’une opportunité",
       cards: {
@@ -65,17 +59,19 @@ export const translations = {
         "Les technologies que j’utilise pour concevoir des solutions web modernes, utiles et soignées.",
       aria: "Catégories de compétences",
       categoryLabels: {
-        "Langages de programmation": "Langages de programmation",
+        Langages: "Langages",
         Frontend: "Frontend",
-        "Backend et API": "Backend et API",
+        Backend: "Backend",
+        "Intelligence artificielle": "Intelligence artificielle",
         "Bases de données": "Bases de données",
-        "IA, Machine Learning et Data": "IA, Machine Learning et Data",
-        "Outils et technologies": "Outils et technologies",
+        "Data & BI": "Data & BI",
+        Outils: "Outils",
       },
       descriptions: {
         HTML: "Structure web",
         CSS: "Design responsive",
         JavaScript: "Interactivité",
+        TypeScript: "Applications typées",
         PHP: "Backend web",
         Java: "POO",
         Python: "Data & scripts",
@@ -90,16 +86,23 @@ export const translations = {
         FastAPI: "API Python",
         Flask: "Services Python",
         SQL: "Requêtes",
+        PostgreSQL: "Base relationnelle",
         MySQL: "Base relationnelle",
         "SQL Server": "Gestion de données",
         MongoDB: "NoSQL",
-        PhpMyAdmin: "Administration BDD",
         "Machine Learning": "Modèles prédictifs",
         "Deep Learning": "Réseaux de neurones",
-        "Scikit-learn": "Modèles ML",
+        "IA générative": "Génération assistée par IA",
+        LLM: "Modèles de langage",
+        "Data Mining": "Exploration de données",
+        "scikit-learn": "Modèles ML",
+        TensorFlow: "Deep Learning",
+        PyTorch: "Deep Learning",
         "Python Data": "Analyse de données",
-        OCR: "Extraction de texte",
         SSIS: "Pipelines ETL",
+        ETL: "Extraction, transformation et chargement",
+        "Data Warehouse": "Entrepôts de données",
+        SQLite: "Base embarquée",
         Git: "Versioning",
         GitHub: "Collaboration",
         Figma: "UI/UX Design",
@@ -111,6 +114,7 @@ export const translations = {
       intro: "Des applications full-stack, mobiles, data et IA conçues autour de problèmes concrets.",
       filters: {
         Tous: "Tous",
+        "Web / IA": "Web / IA",
         Web: "Web",
         "IA / Data": "IA / Data",
         "BI / Data": "BI / Data",
@@ -124,6 +128,12 @@ export const translations = {
       technologies: "Technologies utilisées",
       githubLabel: "Voir le dépôt GitHub de",
       items: {
+        9: {
+          title: "TrainFlow AI",
+          description:
+            "Plateforme de gestion de formations professionnelles couvrant les entreprises, formateurs, dossiers, programmes, tarification et documents. Elle intègre des fonctionnalités d’IA locale avec Ollama et Qwen2.5 pour l’analyse de CV et la génération de programmes.",
+          category: "Web / IA",
+        },
         5: {
           title: "SmartScan Medical OCR",
           description:
@@ -139,7 +149,7 @@ export const translations = {
         4: {
           title: "DocIA — AI Document Extractor",
           description:
-            "Plateforme Next.js/FastAPI qui transforme des PDF et scans hétérogènes en données JSON validées. Le pipeline route les documents vers OCR, Docling et Qwen2.5 ou Gemini, puis conserve un historique dans SQLite.",
+            "Plateforme d’extraction intelligente permettant de transformer des PDF et des documents scannés en données structurées. Le pipeline combine OCR, Docling et des LLM locaux ou distants, puis valide les résultats avant leur exploitation.",
           category: "IA / Data",
         },
         1: {
@@ -157,13 +167,13 @@ export const translations = {
         3: {
           title: "Prédiction de sinistre habitation",
           description:
-            "Projet de Machine Learning comparant plusieurs modèles pour estimer le risque de sinistre habitation et présenter les métriques d’évaluation dans un tableau de bord.",
+            "Développé et comparé plusieurs modèles prédictifs sur des données d’assurance habitation afin d’estimer le risque de sinistre et d’évaluer leurs performances.",
           category: "IA / Data",
         },
         7: {
           title: "Plateforme de gestion des missions",
           description:
-            "Plateforme Angular/Spring Boot de gestion des missions et affectations. Elle sécurise les accès par JWT et rôles, contrôle la charge des employés et applique des opérations transactionnelles atomiques.",
+            "Développé une plateforme de gestion des missions avec API REST, authentification JWT, gestion des rôles et suivi des affectations.",
           category: "Web",
         },
         8: {
@@ -181,27 +191,27 @@ export const translations = {
         "Mes expériences m’ont permis de découvrir différents environnements professionnels, du développement web à l’analyse des systèmes informatiques.",
       items: [
         {
-          period: "Février 2026 — Juin 2026",
-          role: "Projet académique — DocIA",
+          period: "Juin 2026 — Août 2026",
+          role: "Stage d'été",
           description:
-            "Projet académique de plateforme d’extraction structurée à partir de PDF et d’images, avec OCR, validation des données et traitement par modèles d’IA.",
+            "Développé une plateforme de gestion de formations intégrant des LLM pour générer des programmes et extraire des informations structurées de CV, avec validation des sorties.",
         },
         {
           period: "Fév. 2024 — Mai 2024",
-          role: "PFE de licence",
+          role: "Projet de Fin d’Études de Licence",
           description:
-            "Développement d’une application de gestion des dossiers médicaux informatisés pour les patients externes.",
+            "Conçu et développé une application de gestion des dossiers médicaux permettant le suivi des patients externes, des prescriptions et des diagnostics.",
         },
         {
           period: "Jan. 2023 — Fév. 2023",
           role: "Stage de Perfectionnement",
           description:
-            "Conception UI/UX, design et développement d’une application de restauration et de solutions 3D.",
+            "Conçu les maquettes UI/UX avec Figma et développé une application mobile de restauration avec Flutter.",
         },
         {
           period: "Jan. 2022 — Fév. 2022",
           role: "Stage d’Initiation",
-          description: "Analyse et synthèse des systèmes informatiques de la banque.",
+          description: "Analysé les systèmes d’information de la banque et synthétisé leur organisation.",
         },
       ],
     },
@@ -212,24 +222,22 @@ export const translations = {
         "Un apprentissage continu, entre fondamentaux informatiques, pratique et nouvelles technologies.",
       items: [
         {
-          period: "2021",
-          degree: "Baccalauréat sciences techniques",
-          school: "Lycée Ali Bourguiba Mahres, Sfax",
-          description: "Acquisition des bases scientifiques et techniques.",
+          period: "2024 — aujourd’hui",
+          degree: "Cycle ingénieur en génie informatique — 3e année",
+          school: "Institut International de Technologie (IIT), Sfax",
+          description: "Formation en génie informatique, développement logiciel et intelligence artificielle.",
         },
         {
           period: "2021 — 2024",
-          degree: "Licence appliquée en Développement des Systèmes d’Information",
-          school: "Institut Supérieur des Études Technologiques de Sfax",
-          description:
-            "Formation orientée développement logiciel, bases de données et systèmes d’information.",
+          degree: "Licence appliquée en technologies de l’informatique",
+          school: "Institut Supérieur des Études Technologiques (ISET), Sfax",
+          description: "Développement des systèmes d’information.",
         },
         {
-          period: "En cours",
-          degree: "3e année de Génie Logiciel et Informatique Décisionnelle (GLID)",
-          school: "Institut International des Technologies — IIT",
-          description:
-            "Formation en ingénierie logicielle, développement full-stack, systèmes décisionnels, data et intelligence artificielle.",
+          period: "2021",
+          degree: "Baccalauréat Sciences Techniques",
+          school: "Lycée Ali Bourguiba, Mahres",
+          description: "Formation secondaire scientifique et technique.",
         },
       ],
     },
@@ -241,51 +249,59 @@ export const translations = {
       columns: {
         certificates: "Certificats",
         languages: "Langues",
-        associations: "Engagement & initiatives",
+        associations: "Engagements & initiatives",
       },
       certificates: [
         {
-          title: "CCNA 1 — Introduction aux réseaux",
-          issuer: "Certificat de module Cisco Networking Academy",
+          title: "AI Fundamentals: Foundations for Understanding AI",
+          issuer: "IBM",
+          short: "IBM",
+        },
+        {
+          title: "Scrum Fundamentals Certified (SFC)",
+          issuer: "SCRUMstudy",
+          short: "SFC",
+        },
+        {
+          title: "CCNA: Introduction to Networks",
+          issuer: "Cisco Networking Academy",
           short: "CISCO",
             image: asset("images/certificates/ccna-presentation-reseaux.jpg"),
         },
-        {
-          title: "National Microsoft Technologies Camps Tunisia",
-          issuer: "Microsoft Technologies Camp",
-          short: "MS",
-            image: asset("images/certificates/nmtc-certificate.jpg"),
-        },
       ],
       languages: [
-        { name: "Arabe", level: "Natif", value: 100 },
-        { name: "Français", level: "Avancé", value: 86 },
-        { name: "Anglais", level: "Intermédiaire", value: 66 },
+        { name: "Arabe", level: "Langue maternelle" },
+        { name: "Français", level: "Courant" },
+        { name: "Anglais", level: "Intermédiaire" },
       ],
       associations: [
         {
-          name: "Club Microsoft ISET Sfax 2023",
+          name: "Microsoft Tech Club",
           role: "Media Manager",
           type: "Association",
           year: "2023",
+          location: "ISET Sfax",
+          description: "Création de contenus et communication autour des activités du club.",
         },
         {
           name: "National Microsoft Technologies Camp 2023",
           role: "Assistante Marketing",
           type: "Événement",
           year: "2023",
+          description: "Participation à la communication et à la promotion de l’événement.",
         },
         {
           name: "Viavo Vibes",
-          role: "Fondatrice / gestion du small business",
+          role: "Fondatrice",
           type: "Initiative personnelle",
           year: "2022",
           description:
-            "Création et gestion d’un small business autour d’une identité de marque, de la communication digitale et d’une présence Instagram.",
+            "Création de l’identité de marque, gestion de la communication digitale et développement de la présence sur Instagram.",
           instagram: "https://www.instagram.com/viavo_vibes/",
         },
       ],
       instagramLink: "Voir sur Instagram",
+      certificateView: "Voir le certificat",
       slogan: "Apprendre. Partager. Progresser.",
     },
     contact: {
@@ -318,8 +334,8 @@ export const translations = {
   },
   en: {
     meta: {
-      title: "Nour El Houda Karray | Software Engineering, Data & AI",
-      description: "Portfolio of Nour El Houda Karray, a third-year Software Engineering and Business Intelligence student at IIT Sfax seeking a 2027 final-year internship.",
+      title: "Nour El Houda Karray | Computer Engineering & AI",
+      description: "Portfolio of Nour El Houda Karray, a computer engineering student at IIT Sfax seeking a 2027 final-year internship in software development or artificial intelligence.",
     },
     language: {
       label: "Language selector",
@@ -329,40 +345,34 @@ export const translations = {
     navigation: [
       { label: "Home", id: "accueil" },
       { label: "About", id: "a-propos" },
-      { label: "Skills", id: "competences" },
       { label: "Projects", id: "projets" },
       { label: "Experience", id: "experiences" },
+      { label: "Skills", id: "competences" },
       { label: "Education", id: "formation" },
       { label: "Certificates", id: "certificats" },
       { label: "Contact", id: "contact" },
     ],
     hero: {
       greeting: "Hello, I’m",
-      role: "Third-year Software Engineering & BI Student",
-      statuses: [
-        "Software & full-stack development",
-        "Artificial Intelligence & Machine Learning",
-        "Data Engineering & Business Intelligence",
-      ],
+      role: "Computer Engineering Student — IIT Sfax",
+      statuses: ["Software Development", "Artificial Intelligence"],
       summary:
-        "I build web and mobile applications, APIs, and data/AI solutions. I am seeking a 2027 final-year internship to contribute to a concrete software project within a technical team.",
+        "As a computer engineering student at IIT Sfax, I develop my skills through hands-on projects in software development and artificial intelligence. I am seeking a 2027 final-year internship to put my knowledge into practice and continue progressing within a technical team.",
       projectsButton: "View my projects",
       cvButton: "Download my CV",
       cvDownloadName: "cv-nour-el-houda-karray.pdf",
       socialsLabel: "Social links",
       portraitAlt: "Professional portrait of Nour El Houda Karray",
       graduationAlt: "Nour El Houda Karray at her graduation ceremony",
-      creative: "Creative",
-      availability: "Seeking a 2027 final-year internship",
-      motivated: "Motivated",
+      availability: "Available for a 2027 final-year internship",
       scroll: "Scroll",
     },
     about: {
       eyebrow: "About me",
       title: "Who am I?",
       paragraphs: [
-        "I am a third-year Software Engineering and Business Intelligence student at IIT Sfax. I build full-stack and mobile applications, secure APIs, and solutions for extracting, analysing and visualising data.",
-        "My projects use React, Angular, Spring Boot, FastAPI, Flutter, SQL Server and AI/OCR tools. I am seeking a 2027 final-year internship where I can contribute to the design and delivery of a software product within a technical team.",
+        "As a computer engineering student at IIT Sfax, I am progressively building a versatile profile in software development and artificial intelligence. My projects allow me to work across different stages of an application: design, frontend and backend development, data management, AI model integration, and testing.",
+        "I particularly enjoy projects that combine several technologies to address a concrete need. I am currently seeking a 2027 final-year internship to strengthen this experience within a technical team.",
       ],
       cta: "Discuss an opportunity",
       cards: {
@@ -380,17 +390,19 @@ export const translations = {
         "The technologies I use to build modern, useful and polished web solutions.",
       aria: "Skill categories",
       categoryLabels: {
-        "Langages de programmation": "Programming Languages",
+        Langages: "Languages",
         Frontend: "Frontend",
-        "Backend et API": "Backend & APIs",
+        Backend: "Backend",
+        "Intelligence artificielle": "Artificial Intelligence",
         "Bases de données": "Databases",
-        "IA, Machine Learning et Data": "AI, Machine Learning & Data",
-        "Outils et technologies": "Tools & Technologies",
+        "Data & BI": "Data & BI",
+        Outils: "Tools",
       },
       descriptions: {
         HTML: "Web structure",
         CSS: "Responsive design",
         JavaScript: "Interactivity",
+        TypeScript: "Typed applications",
         PHP: "Web backend",
         Java: "OOP",
         Python: "Data & scripts",
@@ -405,16 +417,23 @@ export const translations = {
         FastAPI: "Python APIs",
         Flask: "Python services",
         SQL: "Queries",
+        PostgreSQL: "Relational database",
         MySQL: "Relational database",
         "SQL Server": "Data management",
         MongoDB: "NoSQL",
-        PhpMyAdmin: "Database administration",
         "Machine Learning": "Predictive models",
         "Deep Learning": "Neural networks",
-        "Scikit-learn": "ML models",
+        "IA générative": "Generative AI",
+        LLM: "Language models",
+        "Data Mining": "Data exploration",
+        "scikit-learn": "ML models",
+        TensorFlow: "Deep Learning",
+        PyTorch: "Deep Learning",
         "Python Data": "Data analysis",
-        OCR: "Text extraction",
         SSIS: "ETL pipelines",
+        ETL: "Extract, transform and load",
+        "Data Warehouse": "Data warehousing",
+        SQLite: "Embedded database",
         Git: "Version control",
         GitHub: "Collaboration",
         Figma: "UI/UX design",
@@ -426,6 +445,7 @@ export const translations = {
       intro: "Full-stack, mobile, data and AI applications designed around concrete problems.",
       filters: {
         Tous: "All",
+        "Web / IA": "Web / AI",
         Web: "Web",
         "IA / Data": "AI / Data",
         "BI / Data": "BI / Data",
@@ -439,6 +459,12 @@ export const translations = {
       technologies: "Technologies used",
       githubLabel: "View the GitHub repository for",
       items: {
+        9: {
+          title: "TrainFlow AI",
+          description:
+            "Professional training management platform covering companies, trainers, records, programmes, pricing, and documents. It integrates local AI features with Ollama and Qwen2.5 for CV analysis and programme generation.",
+          category: "Web / AI",
+        },
         5: {
           title: "SmartScan Medical OCR",
           description:
@@ -454,7 +480,7 @@ export const translations = {
         4: {
           title: "DocIA — AI Document Extractor",
           description:
-            "Next.js/FastAPI platform that converts heterogeneous PDFs and scans into validated JSON. Its pipeline routes documents through OCR, Docling and Qwen2.5 or Gemini, with history stored in SQLite.",
+            "Intelligent extraction platform that converts PDFs and scanned documents into structured data. The pipeline combines OCR, Docling, and local or remote LLMs, then validates the results before they are used.",
           category: "AI / Data",
         },
         1: {
@@ -472,13 +498,13 @@ export const translations = {
         3: {
           title: "Home Claim Prediction",
           description:
-            "Machine Learning project comparing several models to estimate home-insurance claim risk and present evaluation metrics in a dashboard.",
+            "Developed and compared several predictive models using home-insurance data to estimate claim risk and evaluate their performance.",
           category: "AI / Data",
         },
         7: {
           title: "Mission Management Platform",
           description:
-            "Angular/Spring Boot platform for managing missions and employee assignments. It uses JWT role-based access, workload controls and atomic transactional operations.",
+            "Developed a mission management platform with a REST API, JWT authentication, role management, and assignment tracking.",
           category: "Web",
         },
         8: {
@@ -496,27 +522,27 @@ export const translations = {
         "My experiences helped me discover different professional environments, from web development to information systems analysis.",
       items: [
         {
-          period: "February 2026 — June 2026",
-          role: "Academic project — DocIA",
+          period: "June 2026 — August 2026",
+          role: "Summer Internship",
           description:
-            "Academic project for structured extraction from PDFs and images, combining OCR, data validation and AI model processing.",
+            "Developed a training management platform integrating LLMs to generate programmes and extract structured information from CVs, with output validation.",
         },
         {
           period: "Feb. 2024 — May 2024",
           role: "Bachelor’s final-year project",
           description:
-            "Development of an application for managing computerized medical records for outpatients.",
+            "Designed and developed a medical record management application for tracking outpatients, prescriptions, and diagnoses.",
         },
         {
           period: "Jan. 2023 — Feb. 2023",
           role: "Advanced Internship",
           description:
-            "UI/UX design and development of a restaurant application and 3D solutions.",
+            "Designed UI/UX mock-ups in Figma and developed a mobile restaurant application with Flutter.",
         },
         {
           period: "Jan. 2022 — Feb. 2022",
           role: "Introductory Internship",
-          description: "Analysis and synthesis of the bank’s information systems.",
+          description: "Analysed the bank’s information systems and summarised their organisation.",
         },
       ],
     },
@@ -527,24 +553,22 @@ export const translations = {
         "Continuous learning through computer science fundamentals, practice and new technologies.",
       items: [
         {
-          period: "2021",
-          degree: "Technical Sciences Baccalaureate",
-          school: "Ali Bourguiba Mahres High School, Sfax",
-          description: "Acquired scientific and technical foundations.",
+          period: "2024 — present",
+          degree: "Computer Engineering Programme — Third Year",
+          school: "International Institute of Technology (IIT), Sfax",
+          description: "Coursework in computer engineering, software development, and artificial intelligence.",
         },
         {
           period: "2021 — 2024",
-          degree: "Applied Bachelor’s Degree in Information Systems Development",
-          school: "Higher Institute of Technological Studies of Sfax",
-          description:
-            "Training focused on software development, databases and information systems.",
+          degree: "Applied Bachelor’s Degree in Information Technology",
+          school: "Higher Institute of Technological Studies (ISET), Sfax",
+          description: "Information systems development.",
         },
         {
-          period: "In progress",
-          degree: "Third-year Software Engineering and Business Intelligence (GLID)",
-          school: "International Institute of Technology — IIT",
-          description:
-            "Coursework in software engineering, full-stack development, business intelligence, data and artificial intelligence.",
+          period: "2021",
+          degree: "Technical Sciences Baccalaureate",
+          school: "Ali Bourguiba High School, Mahres",
+          description: "Secondary education in science and technology.",
         },
       ],
     },
@@ -556,51 +580,59 @@ export const translations = {
       columns: {
         certificates: "Certificates",
         languages: "Languages",
-        associations: "Engagement & initiatives",
+        associations: "Engagements & Initiatives",
       },
       certificates: [
         {
-          title: "CCNA 1 — Introduction to Networks",
-          issuer: "Cisco Networking Academy module certificate",
+          title: "AI Fundamentals: Foundations for Understanding AI",
+          issuer: "IBM",
+          short: "IBM",
+        },
+        {
+          title: "Scrum Fundamentals Certified (SFC)",
+          issuer: "SCRUMstudy",
+          short: "SFC",
+        },
+        {
+          title: "CCNA: Introduction to Networks",
+          issuer: "Cisco Networking Academy",
           short: "CISCO",
             image: asset("images/certificates/ccna-presentation-reseaux.jpg"),
         },
-        {
-          title: "National Microsoft Technologies Camps Tunisia",
-          issuer: "Microsoft Technologies Camp",
-          short: "MS",
-            image: asset("images/certificates/nmtc-certificate.jpg"),
-        },
       ],
       languages: [
-        { name: "Arabic", level: "Native", value: 100 },
-        { name: "French", level: "Advanced", value: 86 },
-        { name: "English", level: "Intermediate", value: 66 },
+        { name: "Arabic", level: "Native" },
+        { name: "French", level: "Fluent" },
+        { name: "English", level: "Intermediate" },
       ],
       associations: [
         {
-          name: "Microsoft Club ISET Sfax 2023",
+          name: "Microsoft Tech Club",
           role: "Media Manager",
           type: "Association",
           year: "2023",
+          location: "ISET Sfax",
+          description: "Created content and communications for the club’s activities.",
         },
         {
           name: "National Microsoft Technologies Camp 2023",
           role: "Marketing Assistant",
           type: "Event",
           year: "2023",
+          description: "Contributed to the communication and promotion of the event.",
         },
         {
           name: "Viavo Vibes",
-          role: "Founder / small business management",
+          role: "Founder",
           type: "Personal initiative",
           year: "2022",
           description:
-            "Creation and management of a small business around brand identity, digital communication and an Instagram presence.",
+            "Created the brand identity, managed digital communications, and developed its Instagram presence.",
           instagram: "https://www.instagram.com/viavo_vibes/",
         },
       ],
       instagramLink: "View on Instagram",
+      certificateView: "View certificate",
       slogan: "Learn. Share. Grow.",
     },
     contact: {

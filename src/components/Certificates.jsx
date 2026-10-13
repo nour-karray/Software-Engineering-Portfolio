@@ -76,7 +76,7 @@ function Certificates() {
                       href={certificate.image}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`Voir le certificat ${certificate.title}`}
+                      aria-label={`${t.credentials.certificateView} ${certificate.title}`}
                     >
                       <img src={certificate.image} alt={certificate.title} loading="lazy" />
                     </a>
@@ -121,14 +121,6 @@ function Certificates() {
                     <strong>{language.name}</strong>
                     <span>{language.level}</span>
                   </div>
-                  <div className="language__track">
-                    <motion.span
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${language.value}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.25 + index * 0.12 }}
-                    />
-                  </div>
                 </motion.div>
               ))}
             </div>
@@ -166,6 +158,7 @@ function Certificates() {
                     </span>
                     <h4>{item.name}</h4>
                     <p>{item.role}</p>
+                    {item.location && <p>{item.location}</p>}
                     {item.description && (
                       <p className="association-item__description">{item.description}</p>
                     )}

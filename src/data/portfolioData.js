@@ -3,7 +3,7 @@ const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 export const profile = {
   name: "Nour El Houda Karray",
   firstName: "Nour",
-  role: "Étudiante en 3e année GLID",
+  role: "Étudiante en génie informatique",
   phone: "+216 24 634 008",
   email: "karraynour2002@gmail.com",
   linkedin: "https://www.linkedin.com/in/karray-nour-el-houda",
@@ -15,37 +15,12 @@ export const profile = {
 };
 
 export const skills = {
-  "Langages de programmation": [
-    {
-      name: "HTML",
-      description: "Structure web",
-      icon: "html",
-    },
-    {
-      name: "CSS",
-      description: "Design responsive",
-      icon: "css",
-    },
-    {
-      name: "JavaScript",
-      description: "Interactivité",
-      icon: "javascript",
-    },
-    {
-      name: "PHP",
-      description: "Backend web",
-      icon: "php",
-    },
-    {
-      name: "Java",
-      description: "POO",
-      icon: "java",
-    },
-    {
-      name: "Python",
-      description: "Data & scripts",
-      icon: "python",
-    },
+  Langages: [
+    { name: "Python", description: "Développement et data", icon: "python" },
+    { name: "Java", description: "Programmation orientée objet", icon: "java" },
+    { name: "JavaScript", description: "Développement web", icon: "javascript" },
+    { name: "TypeScript", description: "Applications typées", icon: "typescript" },
+    { name: "SQL", description: "Requêtes et modélisation", icon: "sql" },
   ],
   Frontend: [
     {
@@ -69,44 +44,24 @@ export const skills = {
       icon: "flutter",
     },
   ],
-  "Backend et API": [
-    {
-      name: "Laravel",
-      description: "Web backend",
-      icon: "laravel",
-    },
-    {
-      name: "Spring Boot",
-      description: "API Java",
-      icon: "spring",
-    },
-    {
-      name: "ASP.NET Web API",
-      description: "Services web",
-      icon: "api",
-    },
-    {
-      name: "Blazor",
-      description: "Interfaces .NET",
-      icon: "blazor",
-    },
-    {
-      name: "FastAPI",
-      description: "API Python",
-      icon: "api",
-    },
-    {
-      name: "Flask",
-      description: "Services Python",
-      icon: "api",
-    },
+  Backend: [
+    { name: "Spring Boot", description: "API Java", icon: "spring" },
+    { name: "FastAPI", description: "API Python", icon: "api" },
+    { name: "Flask", description: "Services Python", icon: "api" },
+    { name: "Laravel", description: "Backend web", icon: "laravel" },
+  ],
+  "Intelligence artificielle": [
+    { name: "Machine Learning", description: "Modèles prédictifs", icon: "ml" },
+    { name: "Deep Learning", description: "Réseaux de neurones", icon: "dl" },
+    { name: "IA générative", description: "Génération assistée par IA", icon: "ml" },
+    { name: "LLM", description: "Modèles de langage", icon: "ml" },
+    { name: "Data Mining", description: "Exploration de données", icon: "python-data" },
+    { name: "scikit-learn", description: "Modèles de Machine Learning", icon: "sklearn" },
+    { name: "TensorFlow", description: "Deep Learning", icon: "dl" },
+    { name: "PyTorch", description: "Deep Learning", icon: "dl" },
   ],
   "Bases de données": [
-    {
-      name: "SQL",
-      description: "Requêtes",
-      icon: "sql",
-    },
+    { name: "PostgreSQL", description: "Base relationnelle", icon: "postgresql" },
     {
       name: "MySQL",
       description: "Base relationnelle",
@@ -117,50 +72,14 @@ export const skills = {
       description: "Gestion de données",
       icon: "sqlserver",
     },
-    {
-      name: "MongoDB",
-      description: "NoSQL",
-      icon: "mongodb",
-    },
-    {
-      name: "PhpMyAdmin",
-      description: "Administration BDD",
-      icon: "phpmyadmin",
-    },
+    { name: "SQLite", description: "Base embarquée", icon: "sql" },
   ],
-  "IA, Machine Learning et Data": [
-    {
-      name: "Machine Learning",
-      description: "Modèles prédictifs",
-      icon: "ml",
-    },
-    {
-      name: "Deep Learning",
-      description: "Réseaux de neurones",
-      icon: "dl",
-    },
-    {
-      name: "Scikit-learn",
-      description: "Modèles ML",
-      icon: "sklearn",
-    },
-    {
-      name: "Python Data",
-      description: "Analyse de données",
-      icon: "python-data",
-    },
-    {
-      name: "OCR",
-      description: "Extraction de texte",
-      icon: "ocr",
-    },
-    {
-      name: "SSIS",
-      description: "Pipelines ETL",
-      icon: "etl",
-    },
+  "Data & BI": [
+    { name: "SSIS", description: "Pipelines d’intégration", icon: "etl" },
+    { name: "ETL", description: "Extraction, transformation et chargement", icon: "etl" },
+    { name: "Data Warehouse", description: "Entrepôts de données", icon: "sql" },
   ],
-  "Outils et technologies": [
+  Outils: [
     {
       name: "Git",
       description: "Versioning",
@@ -181,11 +100,21 @@ export const skills = {
 
 export const projects = [
   {
+    id: 9,
+    title: "TrainFlow AI",
+    year: "2026",
+    category: "Web / IA",
+    technologies: ["React", "TypeScript", "Vite", "Spring Boot 3", "Java 21", "MySQL", "Flyway", "Ollama", "Qwen2.5"],
+    cover: asset("images/projects/document-extraction.svg"),
+    github: "https://github.com/nour-karray/trainflow-ai",
+    visual: "document-ai",
+  },
+  {
     id: 4,
     title: "DocIA",
     year: "2026",
     category: "IA / Data",
-    technologies: ["Next.js", "TypeScript", "FastAPI", "Python", "OCR", "Docling", "Qwen2.5", "Gemini", "SQLite"],
+    technologies: ["Python", "FastAPI", "TypeScript", "Next.js", "Docling", "Ollama", "Qwen2.5", "Gemini API", "SQLite"],
     cover: asset("images/projects/docuai-dashboard.png"),
     github: "https://github.com/nour-karray/AI-Document-Extractor",
     visual: "document-ai",
@@ -195,7 +124,7 @@ export const projects = [
     title: "Mission Management Platform",
     year: "2026",
     category: "Web",
-    technologies: ["Java 21", "Spring Boot 3", "Spring Security", "JPA", "Angular 19", "MySQL", "JWT"],
+    technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "MySQL"],
     cover: asset("images/projects/mission-management-dashboard.png"),
     github: "https://github.com/nour-karray/J2ee",
     visual: "mission-management",
@@ -249,7 +178,7 @@ export const projects = [
     category: "Web",
     technologies: ["ASP.NET Web API", "Entity Framework", "Blazor", "SQL Server"],
     cover: asset("images/projects/e-sante-dashboard.png"),
-    github: "",
+    github: "https://github.com/nour-karray/E-sante-app",
     visual: "health",
   },
   {
@@ -257,7 +186,7 @@ export const projects = [
     title: "Prédiction de sinistre habitation",
     year: "2025",
     category: "IA / Data",
-    technologies: ["Python", "Scikit-learn"],
+    technologies: ["Python", "scikit-learn", "Flask", "React"],
     cover: asset("images/projects/prediction-sinistre-dashboard.jpg"),
     github: "",
     visual: "data",
@@ -266,27 +195,27 @@ export const projects = [
 
 export const experiences = [
   {
-    company: "Institut International de Technologie à Sfax",
-    role: "Projet académique — DocIA",
-    period: "Février 2026 — Juin 2026",
+    company: "EcoCode",
+    role: "Stage d'été",
+    period: "Juin 2026 — Août 2026",
     description:
-      "Conception académique d’une plateforme d’extraction structurée à partir de PDF et d’images, avec OCR, validation des données et traitement par modèles d’IA.",
-    technologies: ["Next.js", "FastAPI", "OCR", "Python", "IA"],
+      "Développé une plateforme de gestion de formations intégrant des LLM pour générer des programmes et extraire des informations structurées de CV, avec validation des sorties.",
+    technologies: ["Python", "FastAPI", "TypeScript", "Next.js", "PostgreSQL", "Ollama", "Qwen2.5"],
   },
   {
     company: "Clinisys",
     role: "PFE de licence",
     period: "Fév. 2024 — Mai 2024",
     description:
-      "Développement d’une application de gestion des dossiers médicaux informatisés pour les patients externes.",
-    technologies: ["JavaScript", "Spring Boot", "Interface web"],
+      "Conçu et développé une application de gestion des dossiers médicaux permettant le suivi des patients externes, des prescriptions et des diagnostics.",
+    technologies: ["JavaScript", "Spring Boot"],
   },
   {
     company: "Web Graphique",
     role: "Stage de Perfectionnement",
     period: "Jan. 2023 — Fév. 2023",
     description:
-      "Conception UI/UX, design et développement d’une application de restauration et de solutions 3D.",
+      "Conçu les maquettes UI/UX avec Figma et développé une application mobile de restauration avec Flutter.",
     technologies: ["Flutter", "Unity", "Figma"],
   },
   {
@@ -294,7 +223,7 @@ export const experiences = [
     role: "Stage d’Initiation",
     period: "Jan. 2022 — Fév. 2022",
     description:
-      "Analyse et synthèse des systèmes informatiques de la banque.",
+      "Analysé les systèmes d’information de la banque et synthétisé leur organisation.",
     technologies: [],
   },
 ];

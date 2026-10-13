@@ -31,7 +31,7 @@ describe("portfolio interactions", () => {
 
     expect(document.documentElement).toHaveAttribute("lang", "en");
     expect(screen.getByRole("button", { name: "Projects" })).toBeInTheDocument();
-    expect(document.title).toContain("Software Engineering");
+    expect(document.title).toContain("Computer Engineering");
   });
 
   it("filters projects and exposes only verified repository links", async () => {

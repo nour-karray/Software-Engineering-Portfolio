@@ -6,6 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 const filterOrder = [
   "Tous",
+  "Web / IA",
   "Web",
   "IA / Data",
   "BI / Data",
