@@ -1508,7 +1508,7 @@ h2 {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .timeline-item__card h3 {
@@ -1689,7 +1689,7 @@ h2 {
 
 .credentials__card {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   overflow: hidden;
   border: 1px solid rgba(200, 80, 110, 0.15);
   border-radius: 34px;
@@ -1704,6 +1704,10 @@ h2 {
   position: relative;
   min-height: 340px;
   padding: 30px 28px 28px;
+}
+
+.credentials__column:first-child {
+  grid-column: 1 / -1;
 }
 
 .credentials__column + .credentials__column {
@@ -1740,6 +1744,7 @@ h2 {
 
 .credential-list {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -1748,6 +1753,7 @@ h2 {
   grid-template-columns: 72px minmax(0, 1fr);
   align-items: center;
   gap: 14px;
+  min-height: 110px;
   padding: 15px;
   border: 1px solid rgba(200, 80, 110, 0.12);
   border-radius: 18px;
@@ -2258,12 +2264,6 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .credentials__column:nth-child(3) {
-    grid-column: 1 / -1;
-    border-top: 1px solid rgba(200, 80, 110, 0.07);
-    border-left: 0;
-  }
-
   .skill-hex-grid {
     max-width: 520px;
   }
@@ -2451,6 +2451,10 @@ h2 {
 }
 
 @media (max-width: 680px) {
+  .credential-list {
+    grid-template-columns: 1fr;
+  }
+
   .container {
     width: min(100% - 32px, 560px);
   }
@@ -2636,6 +2640,7 @@ h2 {
   }
 
   .credentials__column {
+    grid-column: auto;
     min-height: auto;
     padding: 28px 24px;
   }
@@ -2784,6 +2789,10 @@ h2 {
   .credential-item__badge {
     width: 48px;
     height: 46px;
+  }
+
+  .credential-list {
+    grid-template-columns: 1fr;
   }
 }
 

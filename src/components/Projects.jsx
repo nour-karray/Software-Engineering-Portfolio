@@ -4,33 +4,20 @@ import { projects } from "../data/portfolioData";
 import { useLanguage } from "../hooks/useLanguage.jsx";
 import ProjectCard from "./ProjectCard";
 
-const filterOrder = [
-  "Tous",
-  "Web / IA",
-  "Web",
-  "IA / Data",
-  "BI / Data",
-  "Mobile / IA",
-  "Java / Architecture",
-  "Entrepreneuriat",
-];
+const filterOrder = ["all", "software", "ai", "data", "mobile"];
 
 function Projects() {
   const { t } = useLanguage();
-  const [filter, setFilter] = useState("Tous");
-  const availableCategories = new Set(projects.map((project) => project.category));
-  const filters = filterOrder.filter(
-    (item) => item === "Tous" || availableCategories.has(item),
-  );
+  const [filter, setFilter] = useState("all");
   const localizedProjects = projects.map((project) => ({
     ...project,
     ...(t.projects.items[project.id] ?? {}),
-    originalCategory: project.category,
+    category: t.projects.filters[project.categories[0]],
   }));
   const visibleProjects =
-    filter === "Tous"
+    filter === "all"
       ? localizedProjects
-      : localizedProjects.filter((project) => project.originalCategory === filter);
+      : localizedProjects.filter((project) => project.categories.includes(filter));
 
   return (
     <section className="section projects" id="projets">
@@ -47,7 +34,7 @@ function Projects() {
         </motion.div>
 
         <div className="project-filters" role="group" aria-label={t.projects.filtersLabel}>
-          {filters.map((item) => (
+          {filterOrder.map((item) => (
             <button
               type="button"
               key={item}
