@@ -2,6 +2,10 @@ const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 export const translations = {
   fr: {
+    meta: {
+      title: "Nour El Houda Karray | Génie logiciel, Data & IA",
+      description: "Portfolio de Nour El Houda Karray, étudiante en 3e année GLID à l’IIT Sfax, à la recherche d’un stage PFE en 2027 en développement logiciel, data ou IA.",
+    },
     language: {
       label: "Choix de langue",
       fr: "FR",
@@ -19,21 +23,22 @@ export const translations = {
     ],
     hero: {
       greeting: "Bonjour, je suis",
-      role: "Étudiante en Génie Informatique",
+      role: "Étudiante en 3e année GLID — IIT Sfax",
       statuses: [
-        "Développeuse Web",
-        "Passionnée par l’Intelligence Artificielle",
-        "Orientée data & expérience utilisateur",
+        "Développement logiciel & full-stack",
+        "Intelligence artificielle & Machine Learning",
+        "Data Engineering & Business Intelligence",
       ],
       summary:
-        "Je conçois des solutions web utiles et innovantes, centrées sur l’expérience utilisateur, en exploitant la data et l’intelligence artificielle pour créer de la valeur.",
+        "Passionnée par le développement logiciel et l’intelligence artificielle, je m’investis dans la conception de solutions innovantes et concrètes. Je recherche un stage PFE en 2027 pour renforcer mes compétences et contribuer à des projets à forte valeur ajoutée.",
       projectsButton: "Voir mes projets",
       cvButton: "Télécharger mon CV",
       cvDownloadName: "cv-nour-el-houda-karray.pdf",
       socialsLabel: "Réseaux sociaux",
       portraitAlt: "Portrait professionnel de Nour El Houda Karray",
+      graduationAlt: "Nour El Houda Karray lors de sa remise de diplôme",
       creative: "Créative",
-      availability: "Ouverte aux opportunités",
+      availability: "Recherche un stage PFE 2027",
       motivated: "Motivée",
       scroll: "Scroll",
     },
@@ -41,8 +46,8 @@ export const translations = {
       eyebrow: "À propos de moi",
       title: "Qui suis-je ?",
       paragraphs: [
-        "Étudiante en génie informatique, je m’intéresse au développement web, à la data et aux solutions numériques utiles. À travers mes stages et mes projets académiques, j’ai travaillé sur des applications web, des interfaces utilisateur et des projets liés à la gestion de données.",
-        "Curieuse, motivée et rigoureuse, je cherche à renforcer mes compétences, apprendre au sein d’une équipe et contribuer à des projets concrets.",
+        "Étudiante en 3e année de Génie Logiciel et Informatique Décisionnelle (GLID) à l’IIT Sfax, je développe des applications full-stack et mobiles, des API sécurisées ainsi que des solutions d’extraction, d’analyse et de visualisation de données.",
+        "Mes projets associent React, Angular, Spring Boot, FastAPI, Flutter, SQL Server et des outils d’IA/OCR. Je recherche un stage PFE en 2027 pour participer à la conception et à la réalisation d’un produit logiciel au sein d’une équipe technique.",
       ],
       cta: "Discuter d’une opportunité",
       cards: {
@@ -50,7 +55,7 @@ export const translations = {
         email: "Email",
         phone: "Téléphone",
         availability: "Disponibilité",
-        availabilityValue: "Ouverte aux opportunités",
+        availabilityValue: "Stage PFE 2027",
       },
     },
     skills: {
@@ -60,11 +65,12 @@ export const translations = {
         "Les technologies que j’utilise pour concevoir des solutions web modernes, utiles et soignées.",
       aria: "Catégories de compétences",
       categoryLabels: {
-        Langages: "Langages",
-        "Frameworks & Technologies Web": "Frameworks & Technologies Web",
+        "Langages de programmation": "Langages de programmation",
+        Frontend: "Frontend",
+        "Backend et API": "Backend et API",
         "Bases de données": "Bases de données",
-        "Outils & Design": "Outils & Design",
-        "IA & Data": "IA & Data",
+        "IA, Machine Learning et Data": "IA, Machine Learning et Data",
+        "Outils et technologies": "Outils et technologies",
       },
       descriptions: {
         HTML: "Structure web",
@@ -75,11 +81,14 @@ export const translations = {
         Python: "Data & scripts",
         React: "Interfaces modernes",
         Angular: "Applications web",
-        Django: "Backend Python",
+        "Next.js": "Applications React full-stack",
+        Flutter: "Applications mobiles",
         Laravel: "Web backend",
         "Spring Boot": "API Java",
         "ASP.NET Web API": "Services web",
         Blazor: "Interfaces .NET",
+        FastAPI: "API Python",
+        Flask: "Services Python",
         SQL: "Requêtes",
         MySQL: "Base relationnelle",
         "SQL Server": "Gestion de données",
@@ -89,6 +98,8 @@ export const translations = {
         "Deep Learning": "Réseaux de neurones",
         "Scikit-learn": "Modèles ML",
         "Python Data": "Analyse de données",
+        OCR: "Extraction de texte",
+        SSIS: "Pipelines ETL",
         Git: "Versioning",
         GitHub: "Collaboration",
         Figma: "UI/UX Design",
@@ -97,7 +108,7 @@ export const translations = {
     projects: {
       eyebrow: "Projets",
       title: "Quelques idées devenues réelles",
-      intro: "Une sélection de projets web et data qui reflètent ma curiosité technique.",
+      intro: "Des applications full-stack, mobiles, data et IA conçues autour de problèmes concrets.",
       filters: {
         Tous: "Tous",
         Web: "Web",
@@ -111,53 +122,54 @@ export const translations = {
       close: "Fermer",
       realizedIn: "Réalisé en",
       technologies: "Technologies utilisées",
+      githubLabel: "Voir le dépôt GitHub de",
       items: {
         5: {
-          title: "SmartScan ML Kit",
+          title: "SmartScan Medical OCR",
           description:
-            "Application mobile Flutter de scan et gestion intelligente de documents, intégrant OCR avec Google ML Kit, authentification Firebase et analyse structurée de documents médicaux via un backend Flask connecté à l’API Gemini.",
+            "Application Flutter pour numériser, classer et retrouver des documents. Elle combine OCR Google ML Kit, authentification Firebase et extraction médicale structurée via une API Flask connectée à Gemini.",
           category: "Mobile / IA",
         },
         6: {
           title: "Drawing App JavaFX",
           description:
-            "Application JavaFX permettant de dessiner des formes géométriques, sauvegarder les dessins dans SQLite et appliquer plusieurs design patterns pour structurer le code.",
+            "Application JavaFX de dessin et de persistance SQLite illustrant les patterns Factory, Command, Strategy, Observer, Decorator et Singleton, avec annulation et journalisation des actions.",
           category: "Java / Architecture",
         },
         4: {
-          title: "Plateforme intelligente d’extraction d’informations",
+          title: "DocIA — AI Document Extractor",
           description:
-            "Projet de Fin d’Année autour d’une plateforme capable d’extraire automatiquement des informations depuis des documents PDF et images pour produire des données structurées et exploitables.",
+            "Plateforme Next.js/FastAPI qui transforme des PDF et scans hétérogènes en données JSON validées. Le pipeline route les documents vers OCR, Docling et Qwen2.5 ou Gemini, puis conserve un historique dans SQLite.",
           category: "IA / Data",
         },
         1: {
           title: "Plateforme e-Santé",
           description:
-            "Application web de gestion et de délivrance de prescriptions électroniques pour les pharmaciens.",
+            "Application web de gestion des patients, médicaments et ordonnances électroniques, avec API ASP.NET, interface Blazor et persistance SQL Server.",
           category: "Web",
         },
         2: {
           title: "Event Planner",
           description:
-            "Application web permettant de créer, gérer et suivre des événements avec inscription des utilisateurs.",
+            "Application Laravel permettant aux utilisateurs de découvrir des événements et de s’y inscrire, avec un espace d’administration pour gérer événements, catégories et inscriptions.",
           category: "Web",
         },
         3: {
           title: "Prédiction de sinistre habitation",
           description:
-            "Projet de fouille de données visant à prédire la probabilité de sinistre habitation à partir de données réelles.",
+            "Projet de Machine Learning comparant plusieurs modèles pour estimer le risque de sinistre habitation et présenter les métriques d’évaluation dans un tableau de bord.",
           category: "IA / Data",
         },
         7: {
           title: "Plateforme de gestion des missions",
           description:
-            "Plateforme de planification des missions et d’affectation des employés avec authentification JWT, contrôle d’accès par rôle et règles métier transactionnelles.",
+            "Plateforme Angular/Spring Boot de gestion des missions et affectations. Elle sécurise les accès par JWT et rôles, contrôle la charge des employés et applique des opérations transactionnelles atomiques.",
           category: "Web",
         },
         8: {
           title: "Entrepôt de données HR Analytics",
           description:
-            "Projet BI transformant des données RH CSV en entrepôt SQL Server via SSIS, puis en indicateurs et tableaux de bord Blazor.",
+            "Pipeline BI qui nettoie des données RH, les charge via SSIS dans un modèle dimensionnel SQL Server, puis expose les KPI d’effectifs, salaires, absences et turnover dans un dashboard Blazor.",
           category: "BI / Data",
         },
       },
@@ -170,13 +182,13 @@ export const translations = {
       items: [
         {
           period: "Février 2026 — Juin 2026",
-          role: "Projet de Fin d’Études",
+          role: "Projet académique — DocIA",
           description:
-            "Plateforme intelligente d’extraction d’informations à partir de documents hétérogènes. Conception d’une solution capable d’extraire automatiquement des informations depuis des PDF et images pour produire des données structurées et exploitables.",
+            "Projet académique de plateforme d’extraction structurée à partir de PDF et d’images, avec OCR, validation des données et traitement par modèles d’IA.",
         },
         {
           period: "Fév. 2024 — Mai 2024",
-          role: "Projet de Fin d’Étude",
+          role: "PFE de licence",
           description:
             "Développement d’une application de gestion des dossiers médicaux informatisés pour les patients externes.",
         },
@@ -214,10 +226,10 @@ export const translations = {
         },
         {
           period: "En cours",
-          degree: "2ème année Génie Informatique",
+          degree: "3e année de Génie Logiciel et Informatique Décisionnelle (GLID)",
           school: "Institut International des Technologies — IIT",
           description:
-            "Approfondissement des compétences en développement web, data, IA et ingénierie logicielle.",
+            "Formation en ingénierie logicielle, développement full-stack, systèmes décisionnels, data et intelligence artificielle.",
         },
       ],
     },
@@ -233,8 +245,8 @@ export const translations = {
       },
       certificates: [
         {
-          title: "CCNA 1 — Cisco Certified Network Associate",
-          issuer: "Introduction to Networks",
+          title: "CCNA 1 — Introduction aux réseaux",
+          issuer: "Certificat de module Cisco Networking Academy",
           short: "CISCO",
             image: asset("images/certificates/ccna-presentation-reseaux.jpg"),
         },
@@ -305,6 +317,10 @@ export const translations = {
     },
   },
   en: {
+    meta: {
+      title: "Nour El Houda Karray | Software Engineering, Data & AI",
+      description: "Portfolio of Nour El Houda Karray, a third-year Software Engineering and Business Intelligence student at IIT Sfax seeking a 2027 final-year internship.",
+    },
     language: {
       label: "Language selector",
       fr: "FR",
@@ -322,21 +338,22 @@ export const translations = {
     ],
     hero: {
       greeting: "Hello, I’m",
-      role: "Computer Engineering Student",
+      role: "Third-year Software Engineering & BI Student",
       statuses: [
-        "Web Developer",
-        "Passionate about Artificial Intelligence",
-        "Data & user experience oriented",
+        "Software & full-stack development",
+        "Artificial Intelligence & Machine Learning",
+        "Data Engineering & Business Intelligence",
       ],
       summary:
-        "I design useful and innovative web solutions centered on user experience, using data and artificial intelligence to create value.",
+        "I build web and mobile applications, APIs, and data/AI solutions. I am seeking a 2027 final-year internship to contribute to a concrete software project within a technical team.",
       projectsButton: "View my projects",
       cvButton: "Download my CV",
       cvDownloadName: "cv-nour-el-houda-karray.pdf",
       socialsLabel: "Social links",
       portraitAlt: "Professional portrait of Nour El Houda Karray",
+      graduationAlt: "Nour El Houda Karray at her graduation ceremony",
       creative: "Creative",
-      availability: "Open to opportunities",
+      availability: "Seeking a 2027 final-year internship",
       motivated: "Motivated",
       scroll: "Scroll",
     },
@@ -344,8 +361,8 @@ export const translations = {
       eyebrow: "About me",
       title: "Who am I?",
       paragraphs: [
-        "I am a computer engineering student interested in web development, data and useful digital solutions. Through internships and academic projects, I have worked on web applications, user interfaces and data management projects.",
-        "Curious, motivated and rigorous, I aim to strengthen my skills, learn within a team and contribute to concrete projects.",
+        "I am a third-year Software Engineering and Business Intelligence student at IIT Sfax. I build full-stack and mobile applications, secure APIs, and solutions for extracting, analysing and visualising data.",
+        "My projects use React, Angular, Spring Boot, FastAPI, Flutter, SQL Server and AI/OCR tools. I am seeking a 2027 final-year internship where I can contribute to the design and delivery of a software product within a technical team.",
       ],
       cta: "Discuss an opportunity",
       cards: {
@@ -353,7 +370,7 @@ export const translations = {
         email: "Email",
         phone: "Phone",
         availability: "Availability",
-        availabilityValue: "Open to opportunities",
+        availabilityValue: "2027 final-year internship",
       },
     },
     skills: {
@@ -363,11 +380,12 @@ export const translations = {
         "The technologies I use to build modern, useful and polished web solutions.",
       aria: "Skill categories",
       categoryLabels: {
-        Langages: "Languages",
-        "Frameworks & Technologies Web": "Web Frameworks & Technologies",
+        "Langages de programmation": "Programming Languages",
+        Frontend: "Frontend",
+        "Backend et API": "Backend & APIs",
         "Bases de données": "Databases",
-        "Outils & Design": "Tools & Design",
-        "IA & Data": "AI & Data",
+        "IA, Machine Learning et Data": "AI, Machine Learning & Data",
+        "Outils et technologies": "Tools & Technologies",
       },
       descriptions: {
         HTML: "Web structure",
@@ -378,11 +396,14 @@ export const translations = {
         Python: "Data & scripts",
         React: "Modern interfaces",
         Angular: "Web applications",
-        Django: "Python backend",
+        "Next.js": "Full-stack React applications",
+        Flutter: "Mobile applications",
         Laravel: "Web backend",
         "Spring Boot": "Java APIs",
         "ASP.NET Web API": "Web services",
         Blazor: ".NET interfaces",
+        FastAPI: "Python APIs",
+        Flask: "Python services",
         SQL: "Queries",
         MySQL: "Relational database",
         "SQL Server": "Data management",
@@ -392,6 +413,8 @@ export const translations = {
         "Deep Learning": "Neural networks",
         "Scikit-learn": "ML models",
         "Python Data": "Data analysis",
+        OCR: "Text extraction",
+        SSIS: "ETL pipelines",
         Git: "Version control",
         GitHub: "Collaboration",
         Figma: "UI/UX design",
@@ -400,7 +423,7 @@ export const translations = {
     projects: {
       eyebrow: "Projects",
       title: "A few ideas brought to life",
-      intro: "A selection of web and data projects that reflect my technical curiosity.",
+      intro: "Full-stack, mobile, data and AI applications designed around concrete problems.",
       filters: {
         Tous: "All",
         Web: "Web",
@@ -414,53 +437,54 @@ export const translations = {
       close: "Close",
       realizedIn: "Completed in",
       technologies: "Technologies used",
+      githubLabel: "View the GitHub repository for",
       items: {
         5: {
-          title: "SmartScan ML Kit",
+          title: "SmartScan Medical OCR",
           description:
-            "Flutter mobile application for smart document scanning and management, integrating OCR with Google ML Kit, Firebase authentication and structured medical document analysis through a Flask backend connected to the Gemini API.",
+            "Flutter application for scanning, organising and retrieving documents. It combines Google ML Kit OCR, Firebase authentication and structured medical extraction through a Flask API connected to Gemini.",
           category: "Mobile / AI",
         },
         6: {
           title: "Drawing App JavaFX",
           description:
-            "JavaFX application for drawing geometric shapes, saving drawings in SQLite and applying several design patterns to structure the code.",
+            "JavaFX drawing application with SQLite persistence that demonstrates Factory, Command, Strategy, Observer, Decorator and Singleton patterns, including undo and action logging.",
           category: "Java / Architecture",
         },
         4: {
-          title: "Intelligent Information Extraction Platform",
+          title: "DocIA — AI Document Extractor",
           description:
-            "Final year project focused on a platform capable of automatically extracting information from PDF documents and images to produce structured, usable data.",
+            "Next.js/FastAPI platform that converts heterogeneous PDFs and scans into validated JSON. Its pipeline routes documents through OCR, Docling and Qwen2.5 or Gemini, with history stored in SQLite.",
           category: "AI / Data",
         },
         1: {
           title: "E-Health Platform",
           description:
-            "Web application for managing and delivering electronic prescriptions for pharmacists.",
+            "Web application for managing patients, medication and electronic prescriptions, backed by an ASP.NET API, a Blazor interface and SQL Server persistence.",
           category: "Web",
         },
         2: {
           title: "Event Planner",
           description:
-            "Web application to create, manage and track events with user registration.",
+            "Laravel application where users discover and register for events, with an administration area for managing events, categories and registrations.",
           category: "Web",
         },
         3: {
           title: "Home Claim Prediction",
           description:
-            "Data mining project designed to predict home claim probability from real-world data.",
+            "Machine Learning project comparing several models to estimate home-insurance claim risk and present evaluation metrics in a dashboard.",
           category: "AI / Data",
         },
         7: {
           title: "Mission Management Platform",
           description:
-            "Mission planning and employee assignment platform with JWT authentication, role-based access control and transactional business rules.",
+            "Angular/Spring Boot platform for managing missions and employee assignments. It uses JWT role-based access, workload controls and atomic transactional operations.",
           category: "Web",
         },
         8: {
           title: "HR Analytics Data Warehouse",
           description:
-            "BI project that transforms HR CSV data into a SQL Server warehouse through SSIS, then presents KPIs and dashboards in Blazor.",
+            "BI pipeline that cleans HR data, loads it through SSIS into a dimensional SQL Server model, and presents workforce, salary, absence and turnover KPIs in a Blazor dashboard.",
           category: "BI / Data",
         },
       },
@@ -473,13 +497,13 @@ export const translations = {
       items: [
         {
           period: "February 2026 — June 2026",
-          role: "Final Year Project",
+          role: "Academic project — DocIA",
           description:
-            "Intelligent platform for extracting information from heterogeneous documents. Design of a solution capable of automatically extracting information from PDF documents and images to produce structured, usable data.",
+            "Academic project for structured extraction from PDFs and images, combining OCR, data validation and AI model processing.",
         },
         {
           period: "Feb. 2024 — May 2024",
-          role: "Final Year Project",
+          role: "Bachelor’s final-year project",
           description:
             "Development of an application for managing computerized medical records for outpatients.",
         },
@@ -517,10 +541,10 @@ export const translations = {
         },
         {
           period: "In progress",
-          degree: "2nd year Computer Engineering",
+          degree: "Third-year Software Engineering and Business Intelligence (GLID)",
           school: "International Institute of Technology — IIT",
           description:
-            "Deepening skills in web development, data, AI and software engineering.",
+            "Coursework in software engineering, full-stack development, business intelligence, data and artificial intelligence.",
         },
       ],
     },
@@ -536,8 +560,8 @@ export const translations = {
       },
       certificates: [
         {
-          title: "CCNA 1 — Cisco Certified Network Associate",
-          issuer: "Introduction to Networks",
+          title: "CCNA 1 — Introduction to Networks",
+          issuer: "Cisco Networking Academy module certificate",
           short: "CISCO",
             image: asset("images/certificates/ccna-presentation-reseaux.jpg"),
         },

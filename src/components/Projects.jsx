@@ -65,7 +65,10 @@ function Projects() {
                 key={project.id}
                 project={project}
                 index={index}
-                labels={{ technologies: t.projects.technologies }}
+                labels={{
+                  technologies: t.projects.technologies,
+                  github: t.projects.githubLabel,
+                }}
               />
             ))}
           </AnimatePresence>

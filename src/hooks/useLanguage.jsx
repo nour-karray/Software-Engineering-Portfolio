@@ -17,7 +17,14 @@ export function LanguageProvider({ children }) {
   const [language, setLanguageState] = useState(getInitialLanguage);
 
   useEffect(() => {
+    const currentTranslation = translations[language];
     document.documentElement.lang = language;
+    document.title = currentTranslation.meta.title;
+    document.querySelector('meta[name="description"]')?.setAttribute("content", currentTranslation.meta.description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute("content", currentTranslation.meta.title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute("content", currentTranslation.meta.description);
+    document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", currentTranslation.meta.title);
+    document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", currentTranslation.meta.description);
     window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
   }, [language]);
 

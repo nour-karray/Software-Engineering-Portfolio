@@ -16,6 +16,7 @@ import {
   SiBlazor,
   SiDjango,
   SiDotnet,
+  SiFlutter,
   SiHtml5,
   SiJavascript,
   SiLaravel,
@@ -37,6 +38,7 @@ const skillIcons = {
   php: SiPhp,
   java: FaJava,
   python: SiPython,
+  flutter: SiFlutter,
   react: SiReact,
   angular: SiAngular,
   django: SiDjango,
@@ -56,6 +58,8 @@ const skillIcons = {
   dl: FiZap,
   sklearn: SiScikitlearn,
   "python-data": FiDatabase,
+  ocr: FiCpu,
+  etl: FiDatabase,
 };
 
 const skillColors = {
@@ -65,6 +69,7 @@ const skillColors = {
   php: "#777bb4",
   java: "#d66b2f",
   python: "#3b78b7",
+  flutter: "#31a8ff",
   react: "#37b8d9",
   angular: "#d73b57",
   django: "#2f7d55",
@@ -84,6 +89,8 @@ const skillColors = {
   dl: "#8f65d8",
   sklearn: "#e9942d",
   "python-data": "#3b78b7",
+  ocr: "#5f6fd6",
+  etl: "#c44d5c",
 };
 
 function skillCategoryId(category) {

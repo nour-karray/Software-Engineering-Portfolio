@@ -39,7 +39,7 @@ function ProjectCard({ project, index, labels }) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`GitHub - ${project.title}`}
+              aria-label={`${labels?.github ?? "GitHub"} ${project.title}`}
             >
               <FiGithub />
             </a>
