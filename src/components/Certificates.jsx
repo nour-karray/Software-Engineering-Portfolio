@@ -73,12 +73,16 @@ function Certificates() {
                   {certificate.image ? (
                     <a
                       className="credential-item__image"
-                      href={certificate.document ?? certificate.image}
+                      href={certificate.href ?? certificate.image}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`${t.credentials.certificateView} ${certificate.title}`}
+                      aria-label={`${certificate.viewLabel} ${certificate.title}`}
                     >
-                      <img src={certificate.image} alt={certificate.title} loading="lazy" />
+                      {certificate.image.endsWith(".pdf") ? (
+                        <span className="credential-item__badge">{certificate.short}</span>
+                      ) : (
+                        <img src={certificate.image} alt={certificate.title} loading="lazy" />
+                      )}
                     </a>
                   ) : (
                     <span className="credential-item__badge">{certificate.short}</span>
@@ -158,7 +162,6 @@ function Certificates() {
                     </span>
                     <h4>{item.name}</h4>
                     <p>{item.role}</p>
-                    {item.location && <p>{item.location}</p>}
                     {item.description && (
                       <p className="association-item__description">{item.description}</p>
                     )}

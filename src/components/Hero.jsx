@@ -11,7 +11,7 @@ import {
 import { profile } from "../data/portfolioData";
 import { useLanguage } from "../hooks/useLanguage.jsx";
 
-function useTyping(words) {
+function useTyping(words, reduceMotion) {
   const [wordIndex, setWordIndex] = useState(0);
   const [text, setText] = useState(words[0] ?? "");
   const [deleting, setDeleting] = useState(false);
@@ -23,7 +23,7 @@ function useTyping(words) {
   }, [words]);
 
   useEffect(() => {
-    if (!words.length) return undefined;
+    if (!words.length || reduceMotion) return undefined;
 
     const word = words[wordIndex];
     const atEnd = text === word;
@@ -50,15 +50,15 @@ function useTyping(words) {
     }, delay);
 
     return () => clearTimeout(timer);
-  }, [deleting, text, wordIndex, words]);
+  }, [deleting, reduceMotion, text, wordIndex, words]);
 
-  return text;
+  return reduceMotion ? (words[0] ?? "") : text;
 }
 
 function Hero() {
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
-  const typedText = useTyping(t.hero.statuses);
+  const typedText = useTyping(t.hero.statuses, reduceMotion);
 
   return (
     <section className="hero section" id="accueil">

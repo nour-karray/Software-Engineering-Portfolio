@@ -32,9 +32,9 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Skills />
         <Projects />
         <ExperienceTimeline />
-        <Skills />
         <Education />
         <Certificates />
         <Contact />

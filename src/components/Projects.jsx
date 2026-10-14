@@ -9,10 +9,10 @@ const filterOrder = ["all", "software", "ai", "data", "mobile"];
 function Projects() {
   const { t } = useLanguage();
   const [filter, setFilter] = useState("all");
+  const filters = filterOrder;
   const localizedProjects = projects.map((project) => ({
     ...project,
     ...(t.projects.items[project.id] ?? {}),
-    category: t.projects.filters[project.categories[0]],
   }));
   const visibleProjects =
     filter === "all"
@@ -34,7 +34,7 @@ function Projects() {
         </motion.div>
 
         <div className="project-filters" role="group" aria-label={t.projects.filtersLabel}>
-          {filterOrder.map((item) => (
+          {filters.map((item) => (
             <button
               type="button"
               key={item}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nour-karray.github.io/Software-Engineering-Portfolio/sitemap.xml
