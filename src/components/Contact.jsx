@@ -21,7 +21,7 @@ function Contact() {
     },
     {
       title: t.contact.items.location,
-      value: profile.location,
+      value: t.contact.location,
       icon: FiMapPin,
     },
     {

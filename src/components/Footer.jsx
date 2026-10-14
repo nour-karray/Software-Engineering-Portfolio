@@ -1,7 +1,9 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { profile } from "../data/portfolioData";
+import { useLanguage } from "../hooks/useLanguage.jsx";
 
 function Footer() {
+  const { t } = useLanguage();
   const goTo = (id) =>
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
@@ -11,7 +13,7 @@ function Footer() {
         <button type="button" className="brand" onClick={() => goTo("accueil")}>
           Nour<span>.</span>
         </button>
-        <p className="footer__copyright">© 2026 Karray nour el houda</p>
+        <p className="footer__copyright">{t.footer.copyright}</p>
         <div className="footer__socials">
           <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FiLinkedin />

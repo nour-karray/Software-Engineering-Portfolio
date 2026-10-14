@@ -4,7 +4,6 @@ import {
   FiBox,
   FiCpu,
   FiDatabase,
-  FiFigma,
   FiGitBranch,
   FiGithub,
   FiServer,
@@ -16,10 +15,8 @@ import {
   SiBlazor,
   SiDjango,
   SiDotnet,
-  SiFlutter,
   SiHtml5,
   SiJavascript,
-  SiLaravel,
   SiMongodb,
   SiMysql,
   SiPhp,
@@ -41,11 +38,9 @@ const skillIcons = {
   php: SiPhp,
   java: FaJava,
   python: SiPython,
-  flutter: SiFlutter,
   react: SiReact,
   angular: SiAngular,
   django: SiDjango,
-  laravel: SiLaravel,
   spring: SiSpringboot,
   api: FiServer,
   blazor: SiBlazor,
@@ -57,7 +52,6 @@ const skillIcons = {
   phpmyadmin: FiDatabase,
   git: FiGitBranch,
   github: FiGithub,
-  figma: FiFigma,
   ml: FiCpu,
   dl: FiZap,
   sklearn: SiScikitlearn,
@@ -74,11 +68,9 @@ const skillColors = {
   php: "#777bb4",
   java: "#d66b2f",
   python: "#3b78b7",
-  flutter: "#31a8ff",
   react: "#37b8d9",
   angular: "#d73b57",
   django: "#2f7d55",
-  laravel: "#e85b4a",
   spring: "#6bae45",
   api: "#5f6fd6",
   blazor: "#7b55c7",
@@ -90,7 +82,6 @@ const skillColors = {
   phpmyadmin: "#e09a3f",
   git: "#e85d35",
   github: "#1f1c1f",
-  figma: "#c95b78",
   ml: "#c95b78",
   dl: "#8f65d8",
   sklearn: "#e9942d",
@@ -205,7 +196,7 @@ function Skills() {
                       <span className="skill-hex__icon">
                         <Icon />
                       </span>
-                      <h3>{skill.name}</h3>
+                      <h3>{t.skills.labels[skill.name] ?? skill.name}</h3>
                       <p>{t.skills.descriptions[skill.name] ?? skill.description}</p>
                     </div>
                   </motion.article>

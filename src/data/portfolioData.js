@@ -3,12 +3,11 @@ const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 export const profile = {
   name: "Nour El Houda Karray",
   firstName: "Nour",
-  role: "Étudiante en 3e année GLID",
+  role: "Étudiante en génie informatique",
   phone: "+216 24 634 008",
   email: "karraynour2002@gmail.com",
   linkedin: "https://www.linkedin.com/in/karray-nour-el-houda",
   github: "https://github.com/nour-karray",
-  location: "Sfax, Tunisie",
   portrait: asset("images/nour-portrait.webp"),
   cv: asset("cv-nour-el-houda-karray.pdf"),
   emailLink: "mailto:karraynour2002@gmail.com",
@@ -25,19 +24,17 @@ export const skills = {
   software: [
     { name: "Spring Boot", description: "API Java", icon: "spring" },
     { name: "FastAPI", description: "API Python", icon: "api" },
-    { name: "Next.js", description: "Applications React", icon: "react" },
     { name: "React", description: "Interfaces web", icon: "react" },
     { name: "Angular", description: "Applications web", icon: "angular" },
-    { name: "Flutter", description: "Applications mobiles", icon: "mobile" },
-    { name: "Flask", description: "Services Python", icon: "python" },
-    { name: "Laravel", description: "Applications PHP", icon: "laravel" },
   ],
   ai: [
     { name: "Machine Learning", description: "Modèles prédictifs", icon: "ml" },
+    { name: "Data Mining", description: "Exploration de données", icon: "python-data" },
     { name: "Deep Learning", description: "Réseaux de neurones", icon: "dl" },
     { name: "IA générative", description: "Génération assistée", icon: "ai" },
     { name: "LLM", description: "Modèles de langage", icon: "ai" },
-    { name: "Data Mining", description: "Exploration de données", icon: "python-data" },
+  ],
+  aiLibraries: [
     { name: "scikit-learn", description: "Machine learning Python", icon: "sklearn" },
     { name: "TensorFlow", description: "Deep learning", icon: "dl" },
     { name: "PyTorch", description: "Deep learning", icon: "dl" },
@@ -55,20 +52,19 @@ export const skills = {
   tools: [
     { name: "Git", description: "Versioning", icon: "git" },
     { name: "GitHub", description: "Collaboration", icon: "github" },
-    { name: "Figma", description: "UI/UX Design", icon: "figma" },
   ],
 };
 
 export const projects = [
-  { id: "trainflow", year: "2026", categories: ["software", "ai"], technologies: ["React", "Spring Boot", "MySQL", "Ollama", "Qwen2.5"], cover: "", github: "https://github.com/nour-karray/trainflow-ai", visual: "mission-management" },
-  { id: "docia", year: "2026", categories: ["software", "ai"], technologies: ["Python", "FastAPI", "Next.js", "TypeScript", "OCR", "Docling", "Ollama", "Qwen2.5", "Gemini API"], cover: asset("images/projects/docuai-dashboard.png"), github: "https://github.com/nour-karray/AI-Document-Extractor", visual: "document-ai" },
-  { id: "mission", year: "2026", categories: ["software"], technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "MySQL"], cover: asset("images/projects/mission-management-dashboard.png"), github: "https://github.com/nour-karray/J2ee", visual: "mission-management" },
-  { id: "hr-analytics", year: "2026", categories: ["data"], technologies: ["SQL Server", "SSIS", "ETL", "Data Warehouse", "Blazor"], cover: asset("images/projects/hr-analytics-dashboard.jpg"), github: "https://github.com/nour-karray/HR-Analytics-Data-Warehouse", visual: "hr-analytics" },
-  { id: "smartscan", year: "2026", categories: ["mobile", "ai"], technologies: ["Flutter", "Firebase Auth", "Google ML Kit", "OCR", "Flask", "Gemini API"], cover: asset("images/projects/smartscan-mlkit.svg"), github: "https://github.com/nour-karray/smartscan-medical-ocr", visual: "mobile-ai" },
-  { id: "event-planner", year: "2026", categories: ["software"], technologies: ["Laravel", "MySQL"], cover: asset("images/projects/event-planner-dashboard.png"), github: "https://github.com/nour-karray/Event-planner", visual: "event" },
-  { id: "drawing", year: "2025", categories: ["software"], technologies: ["Java", "JavaFX", "SQLite", "JDBC", "Design Patterns"], cover: asset("images/projects/drawing-javafx-app.png"), coverFit: "contain", github: "https://github.com/nour-karray/javafx-design-patterns", visual: "java-architecture" },
-  { id: "e-sante", year: "2025", categories: ["software"], technologies: ["ASP.NET Web API", "Entity Framework", "Blazor", "SQL Server"], cover: asset("images/projects/e-sante-dashboard.png"), github: "https://github.com/nour-karray/E-sante-app", visual: "health" },
-  { id: "riskinsight", year: "2025", categories: ["ai"], technologies: ["Python", "scikit-learn", "Flask", "React"], cover: asset("images/projects/prediction-sinistre-dashboard.jpg"), github: "", visual: "data" },
+  { id: "trainflow", year: "2026", categories: ["software", "ai"], technologies: ["React", "Spring Boot", "MySQL", "Ollama", "Qwen2.5"], cover: "", github: "https://github.com/nour-karray/trainflow-ai" },
+  { id: "docia", year: "2026", categories: ["software", "ai"], technologies: ["Python", "FastAPI", "Next.js", "TypeScript", "OCR", "Docling", "Ollama", "Qwen2.5", "Gemini API"], cover: asset("images/projects/docuai-dashboard.png"), github: "https://github.com/nour-karray/AI-Document-Extractor" },
+  { id: "mission", year: "2026", categories: ["software"], technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "MySQL"], cover: asset("images/projects/mission-management-dashboard.png"), github: "https://github.com/nour-karray/J2ee" },
+  { id: "riskinsight", year: "2025", categories: ["ai"], technologies: ["Python", "scikit-learn", "Flask", "React"], cover: asset("images/projects/prediction-sinistre-dashboard.jpg"), github: "" },
+  { id: "hr-analytics", year: "2026", categories: ["data"], technologies: ["SQL Server", "SSIS", "ETL", "Data Warehouse", "Blazor"], cover: asset("images/projects/hr-analytics-dashboard.jpg"), github: "https://github.com/nour-karray/HR-Analytics-Data-Warehouse" },
+  { id: "smartscan", year: "2026", categories: ["mobile", "ai"], technologies: ["Flutter", "Firebase Auth", "Google ML Kit", "OCR", "Flask", "Gemini API"], cover: asset("images/projects/smartscan-mlkit.svg"), github: "https://github.com/nour-karray/smartscan-medical-ocr" },
+  { id: "e-sante", year: "2025", categories: ["software"], technologies: ["ASP.NET Core Web API", "Entity Framework Core", "Blazor", "SQL Server"], cover: asset("images/projects/e-sante-dashboard.png"), github: "https://github.com/nour-karray/E-sante-app" },
+  { id: "event-planner", year: "2026", categories: ["software"], technologies: ["Laravel", "MySQL"], cover: asset("images/projects/event-planner-dashboard.png"), github: "https://github.com/nour-karray/Event-planner" },
+  { id: "drawing", year: "2025", categories: ["software"], technologies: ["Java", "JavaFX", "SQLite", "JDBC", "Design Patterns"], cover: asset("images/projects/drawing-javafx-app.png"), coverFit: "contain", github: "https://github.com/nour-karray/javafx-design-patterns" },
 ];
 
 export const experiences = [
@@ -85,7 +81,7 @@ export const experiences = [
   {
     id: "webgraphique",
     company: "Web Graphique",
-    technologies: ["Flutter", "Unity", "Figma"],
+    technologies: ["Flutter", "Figma"],
   },
   {
     id: "attijari",
