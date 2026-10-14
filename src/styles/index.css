@@ -148,7 +148,7 @@ body.menu-open {
 .section {
   position: relative;
   padding: 112px 0;
-  scroll-margin-top: calc(var(--nav-height) + 8px);
+  scroll-margin-top: calc(var(--nav-height) + 24px);
 }
 
 .eyebrow {
