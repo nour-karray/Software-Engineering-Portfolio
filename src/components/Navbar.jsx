@@ -61,7 +61,17 @@ function Navbar({ theme, onToggleTheme }) {
     const delay = menuOpen ? 220 : 0;
     setMenuOpen(false);
     window.setTimeout(() => {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      const section = document.getElementById(id);
+      if (!section) return;
+
+      const navHeight = document.querySelector(".navbar")?.getBoundingClientRect().height ?? 0;
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      window.scrollTo({
+        top: Math.max(0, sectionTop - navHeight - 24),
+        behavior: reduceMotion ? "auto" : "smooth",
+      });
     }, delay);
   };
 

@@ -39,9 +39,9 @@ describe("portfolio interactions", () => {
     renderWithLanguage(<Projects />);
 
     expect(screen.getByRole("heading", { name: /DocIA/i })).toBeInTheDocument();
-    await user.click(screen.getByRole("button", { name: "BI / Data" }));
+    await user.click(screen.getByRole("button", { name: "Data & BI" }));
 
-    expect(screen.getByRole("heading", { name: /Entrepôt de données HR Analytics/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /HR Analytics Data Warehouse/i })).toBeInTheDocument();
     await waitFor(() => {
       expect(screen.queryByRole("heading", { name: /Event Planner/i })).not.toBeInTheDocument();
     });
@@ -54,7 +54,7 @@ describe("portfolio interactions", () => {
   it("keeps the critical CV and contact actions available", () => {
     renderWithLanguage(<Hero />);
 
-    expect(screen.getByRole("link", { name: /Télécharger mon CV/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /Télécharger CV/i })).toHaveAttribute(
       "href",
       expect.stringContaining("cv-nour-el-houda-karray.pdf"),
     );
