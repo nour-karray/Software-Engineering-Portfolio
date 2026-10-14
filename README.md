@@ -1,6 +1,6 @@
 # Portfolio de Nour El Houda Karray
 
-Portfolio one-page bilingue présentant mon parcours, mes compétences et mes projets en développement web, data et intelligence artificielle.
+Portfolio one-page bilingue présentant mon parcours, mes compétences et mes projets en développement logiciel, intelligence artificielle et data/BI.
 
 ## Stack
 
@@ -29,6 +29,7 @@ npm run dev
 
 ```bash
 npm run lint
+npm run test
 npm run build
 npm run preview
 ```
@@ -50,7 +51,7 @@ Vite utilise le chemin de base `/Software-Engineering-Portfolio/`. Le build prod
 
 https://nour-karray.github.io/Software-Engineering-Portfolio/
 
-La CI exécute automatiquement `npm ci`, `npm run lint` et `npm run build` sur chaque push et pull request. La publication GitHub Pages doit être activée dans les paramètres du dépôt si elle ne l’est pas encore.
+La CI valide les pull requests avec `npm ci`, `npm run lint`, `npm run test` et `npm run build`. Sur chaque push vers `main`, le workflow GitHub Pages exécute les mêmes validations avant toute publication.
 
 ## Sécurité frontend
 

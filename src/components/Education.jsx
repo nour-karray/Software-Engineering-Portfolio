@@ -47,8 +47,10 @@ function Education() {
                 <div className="education-card__content">
                   <span className="education-card__period">{item.period}</span>
                   <h3>{item.degree}</h3>
+                  {item.specialty && (
+                    <span className="education-card__specialty">{item.specialty}</span>
+                  )}
                   <strong>{item.school}</strong>
-                  <p>{item.description}</p>
                 </div>
                 <span className="education-card__icon" aria-hidden="true">
                   <Icon />
