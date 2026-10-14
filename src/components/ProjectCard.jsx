@@ -16,11 +16,13 @@ function ProjectCard({ project, index, labels }) {
       transition={{ delay: index * 0.08, duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -8 }}
     >
-      <div
-        className={`project-card__cover${project.coverFit === "contain" ? " project-card__cover--contain" : ""}`}
-      >
-        <img src={project.cover} alt={coverAlt} width="1200" height="675" loading="lazy" />
-      </div>
+      {project.cover && (
+        <div
+          className={`project-card__cover${project.coverFit === "contain" ? " project-card__cover--contain" : ""}`}
+        >
+          <img src={project.cover} alt={coverAlt} width="1200" height="675" loading="lazy" />
+        </div>
+      )}
 
       <div className="project-card__body">
         <div className="project-card__meta">
