@@ -56,12 +56,12 @@ export const skills = {
 };
 
 export const projects = [
-  { id: "trainflow", year: "2026", categories: ["software", "ai"], technologies: ["React", "Spring Boot", "MySQL", "Ollama", "Qwen2.5"], cover: "", github: "https://github.com/nour-karray/trainflow-ai" },
+  { id: "trainflow", year: "2026", categories: ["software", "ai"], technologies: ["React", "Spring Boot", "MySQL", "Ollama", "Qwen2.5"], cover: asset("images/projects/trainflow-ai-dashboard.png"), github: "https://github.com/nour-karray/trainflow-ai" },
   { id: "docia", year: "2026", categories: ["software", "ai"], technologies: ["Python", "FastAPI", "Next.js", "TypeScript", "OCR", "Docling", "Ollama", "Qwen2.5", "Gemini API"], cover: asset("images/projects/docuai-dashboard.png"), github: "https://github.com/nour-karray/AI-Document-Extractor" },
   { id: "mission", year: "2026", categories: ["software"], technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "MySQL"], cover: asset("images/projects/mission-management-dashboard.png"), github: "https://github.com/nour-karray/J2ee" },
   { id: "riskinsight", year: "2025", categories: ["ai"], technologies: ["Python", "scikit-learn", "Flask", "React"], cover: asset("images/projects/prediction-sinistre-dashboard.jpg"), github: "" },
   { id: "hr-analytics", year: "2026", categories: ["data"], technologies: ["SQL Server", "SSIS", "ETL", "Data Warehouse", "Blazor"], cover: asset("images/projects/hr-analytics-dashboard.jpg"), github: "https://github.com/nour-karray/HR-Analytics-Data-Warehouse" },
-  { id: "smartscan", year: "2026", categories: ["mobile", "ai"], technologies: ["Flutter", "Firebase Auth", "Google ML Kit", "OCR", "Flask", "Gemini API"], cover: asset("images/projects/smartscan-mlkit.svg"), github: "https://github.com/nour-karray/smartscan-medical-ocr" },
+  { id: "smartscan", year: "2026", categories: ["mobile", "ai"], technologies: ["Flutter", "Firebase Auth", "Google ML Kit", "OCR", "Flask", "Gemini API"], cover: asset("images/projects/smartscan-medical-ocr.png"), github: "https://github.com/nour-karray/smartscan-medical-ocr" },
   { id: "e-sante", year: "2025", categories: ["software"], technologies: ["ASP.NET Core Web API", "Entity Framework Core", "Blazor", "SQL Server"], cover: asset("images/projects/e-sante-dashboard.png"), github: "https://github.com/nour-karray/E-sante-app" },
   { id: "event-planner", year: "2026", categories: ["software"], technologies: ["Laravel", "MySQL"], cover: asset("images/projects/event-planner-dashboard.png"), github: "https://github.com/nour-karray/Event-planner" },
   { id: "drawing", year: "2025", categories: ["software"], technologies: ["Java", "JavaFX", "SQLite", "JDBC", "Design Patterns"], cover: asset("images/projects/drawing-javafx-app.png"), coverFit: "contain", github: "https://github.com/nour-karray/javafx-design-patterns" },
