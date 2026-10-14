@@ -2,7 +2,7 @@ const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 const nav = (items) => items.map(([label, id]) => ({ label, id }));
 const certificateItems = (viewLabel) => [
   { title: "AI Fundamentals: Foundations for Understanding AI", issuer: "IBM", short: "IBM", image: asset("images/certificates/ibm-ai-fundamentals.png"), viewLabel },
-  { title: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy", short: "SFC", image: asset("images/certificates/scrum-fundamentals-nour-karray.pdf"), viewLabel },
+  { title: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy", short: "SFC", image: asset("images/certificates/scrum-fundamentals-preview.png"), href: asset("images/certificates/scrum-fundamentals-nour-karray.pdf"), viewLabel },
   { title: "CCNA: Introduction to Networks", issuer: "Cisco Networking Academy", short: "CISCO", image: asset("images/certificates/ccna-presentation-reseaux.jpg"), viewLabel },
   { title: "National Microsoft Technologies Camp (NMTC)", issuer: "NMTC", short: "NMTC", image: asset("images/certificates/nmtc-certificate.jpg"), viewLabel },
 ];
