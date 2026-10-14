@@ -16,8 +16,8 @@ function About() {
         >
           <div className="about__illustration">
             <img
-              src={`${import.meta.env.BASE_URL}images/about-graduation.jpg`}
-              alt="Nour El Houda Karray en tenue de graduation"
+              src={`${import.meta.env.BASE_URL}images/about-portrait.png`}
+              alt={t.hero.portraitAlt}
               width="828"
               height="1098"
               loading="lazy"

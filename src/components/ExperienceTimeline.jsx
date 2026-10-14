@@ -4,9 +4,9 @@ import { useLanguage } from "../hooks/useLanguage.jsx";
 
 function ExperienceTimeline() {
   const { t } = useLanguage();
-  const localizedExperiences = experiences.map((experience, index) => ({
+  const localizedExperiences = experiences.map((experience) => ({
     ...experience,
-    ...(t.experience.items[index] ?? {}),
+    ...(t.experience.items[experience.id] ?? {}),
   }));
 
   return (

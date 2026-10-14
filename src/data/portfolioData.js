@@ -39,305 +39,82 @@ export const navigation = [
 ];
 
 export const skills = {
-  Langages: [
-    {
-      name: "HTML",
-      description: "Structure web",
-      level: "Base solide",
-      icon: "html",
-    },
-    {
-      name: "CSS",
-      description: "Design responsive",
-      level: "Design UI",
-      icon: "css",
-    },
-    {
-      name: "JavaScript",
-      description: "Interactivité",
-      level: "Front-end",
-      icon: "javascript",
-    },
-    {
-      name: "PHP",
-      description: "Backend web",
-      level: "Serveur",
-      icon: "php",
-    },
-    {
-      name: "Java",
-      description: "POO",
-      level: "POO",
-      icon: "java",
-    },
-    {
-      name: "Python",
-      description: "Data & scripts",
-      level: "Data",
-      icon: "python",
-    },
+  languages: [
+    { name: "Python", description: "Développement et IA", icon: "python" },
+    { name: "Java", description: "Développement logiciel", icon: "java" },
+    { name: "JavaScript", description: "Applications web", icon: "javascript" },
+    { name: "TypeScript", description: "Applications typées", icon: "javascript" },
+    { name: "SQL", description: "Requêtes de données", icon: "sql" },
   ],
-  "Frameworks & Technologies Web": [
-    {
-      name: "React",
-      description: "Interfaces modernes",
-      level: "Front-end",
-      icon: "react",
-    },
-    {
-      name: "Angular",
-      description: "Applications web",
-      level: "SPA",
-      icon: "angular",
-    },
-    {
-      name: "Django",
-      description: "Backend Python",
-      level: "Web",
-      icon: "django",
-    },
-    {
-      name: "Laravel",
-      description: "Web backend",
-      level: "MVC",
-      icon: "laravel",
-    },
-    {
-      name: "Spring Boot",
-      description: "API Java",
-      level: "Backend",
-      icon: "spring",
-    },
-    {
-      name: "ASP.NET Web API",
-      description: "Services web",
-      level: "API",
-      icon: "api",
-    },
-    {
-      name: "Blazor",
-      description: "Interfaces .NET",
-      level: "UI",
-      icon: "blazor",
-    },
+  software: [
+    { name: "Spring Boot", description: "API Java", icon: "spring" },
+    { name: "FastAPI", description: "API Python", icon: "api" },
+    { name: "Next.js", description: "Applications React", icon: "react" },
+    { name: "React", description: "Interfaces web", icon: "react" },
+    { name: "Angular", description: "Applications web", icon: "angular" },
+    { name: "Flutter", description: "Applications mobiles", icon: "mobile" },
+    { name: "Flask", description: "Services Python", icon: "python" },
+    { name: "Laravel", description: "Applications PHP", icon: "laravel" },
   ],
-  "Bases de données": [
-    {
-      name: "SQL",
-      description: "Requêtes",
-      level: "Data",
-      icon: "sql",
-    },
-    {
-      name: "MySQL",
-      description: "Base relationnelle",
-      level: "SQL",
-      icon: "mysql",
-    },
-    {
-      name: "SQL Server",
-      description: "Gestion de données",
-      level: "SGBD",
-      icon: "sqlserver",
-    },
-    {
-      name: "MongoDB",
-      description: "NoSQL",
-      level: "NoSQL",
-      icon: "mongodb",
-    },
-    {
-      name: "PhpMyAdmin",
-      description: "Administration BDD",
-      level: "Admin",
-      icon: "phpmyadmin",
-    },
+  ai: [
+    { name: "Machine Learning", description: "Modèles prédictifs", icon: "ml" },
+    { name: "Deep Learning", description: "Réseaux de neurones", icon: "dl" },
+    { name: "IA générative", description: "Génération assistée", icon: "ai" },
+    { name: "LLM", description: "Modèles de langage", icon: "ai" },
+    { name: "Data Mining", description: "Exploration de données", icon: "python-data" },
+    { name: "scikit-learn", description: "Machine learning Python", icon: "sklearn" },
+    { name: "TensorFlow", description: "Deep learning", icon: "dl" },
+    { name: "PyTorch", description: "Deep learning", icon: "dl" },
   ],
-  "IA & Data": [
-    {
-      name: "Machine Learning",
-      description: "Modèles prédictifs",
-      level: "IA",
-      icon: "ml",
-    },
-    {
-      name: "Deep Learning",
-      description: "Réseaux de neurones",
-      level: "IA avancée",
-      icon: "dl",
-    },
-    {
-      name: "Scikit-learn",
-      description: "Modèles ML",
-      level: "Python",
-      icon: "sklearn",
-    },
-    {
-      name: "Python Data",
-      description: "Analyse de données",
-      level: "Data",
-      icon: "python-data",
-    },
+  databases: [
+    { name: "PostgreSQL", description: "Base relationnelle", icon: "sql" },
+    { name: "MySQL", description: "Base relationnelle", icon: "mysql" },
+    { name: "SQL Server", description: "Gestion de données", icon: "sqlserver" },
   ],
-  "Outils & Design": [
-    {
-      name: "Git",
-      description: "Versioning",
-      level: "Workflow",
-      icon: "git",
-    },
-    {
-      name: "GitHub",
-      description: "Collaboration",
-      level: "Collab",
-      icon: "github",
-    },
-    {
-      name: "Figma",
-      description: "UI/UX Design",
-      level: "Design",
-      icon: "figma",
-    },
+  data: [
+    { name: "SSIS", description: "Intégration de données", icon: "sqlserver" },
+    { name: "ETL", description: "Flux de données", icon: "python-data" },
+    { name: "Data Warehouse", description: "Entrepôt décisionnel", icon: "database" },
+  ],
+  tools: [
+    { name: "Git", description: "Versioning", icon: "git" },
+    { name: "GitHub", description: "Collaboration", icon: "github" },
+    { name: "Figma", description: "UI/UX Design", icon: "figma" },
   ],
 };
 
 export const projects = [
-  {
-    id: 5,
-    title: "SmartScan ML Kit",
-    year: "2026",
-    category: "Mobile / IA",
-    description:
-      "Application mobile Flutter de scan et gestion intelligente de documents, intégrant OCR avec Google ML Kit, authentification Firebase et analyse structurée de documents médicaux via un backend Flask connecté à l’API Gemini.",
-    technologies: [
-      "Flutter",
-      "Dart",
-      "Firebase Auth",
-      "Google ML Kit",
-      "OCR",
-      "Flask",
-      "Gemini API",
-      "Google Sign-In",
-    ],
-    cover: asset("images/projects/smartscan-mlkit.svg"),
-    github: "https://github.com/nour-karray/smartscan-medical-ocr",
-    visual: "mobile-ai",
-  },
-  {
-    id: 6,
-    title: "Drawing App JavaFX",
-    year: "2025",
-    category: "Java / Architecture",
-    description:
-      "Application JavaFX permettant de dessiner des formes géométriques, sauvegarder les dessins dans SQLite et appliquer plusieurs design patterns pour structurer le code.",
-    technologies: [
-      "Java",
-      "JavaFX",
-      "SQLite",
-      "JDBC",
-      "POO",
-      "Design Patterns",
-      "Singleton",
-      "Factory",
-      "Command",
-    ],
-    cover: asset("images/projects/drawing-javafx-app.png"),
-    coverFit: "contain",
-    github: "https://github.com/nour-karray/javafx-design-patterns",
-    visual: "java-architecture",
-  },
-  {
-    id: 4,
-    title: "Plateforme intelligente d’extraction d’informations",
-    year: "2026",
-    category: "IA / Data",
-    description:
-      "Projet de Fin d’Année autour d’une plateforme capable d’extraire automatiquement des informations depuis des documents PDF et images pour produire des données structurées et exploitables.",
-    technologies: ["Python", "JavaScript", "OCR", "IA", "Data extraction"],
-    cover: asset("images/projects/docuai-dashboard.png"),
-    github: "https://github.com/nour-karray/AI-Document-Extractor",
-    visual: "document-ai",
-  },
-  {
-    id: 1,
-    title: "Plateforme e-Santé",
-    year: "2025",
-    category: "Web",
-    description:
-      "Application web de gestion et de délivrance de prescriptions électroniques pour les pharmaciens.",
-    technologies: ["ASP.NET Web API", "Entity Framework", "Blazor", "SQL Server"],
-    cover: asset("images/projects/e-sante-dashboard.png"),
-    github: "",
-    visual: "health",
-  },
-  {
-    id: 2,
-    title: "Event Planner",
-    year: "2026",
-    category: "Web",
-    description:
-      "Application web permettant de créer, gérer et suivre des événements avec inscription des utilisateurs.",
-    technologies: ["Laravel", "MySQL"],
-    cover: asset("images/projects/event-planner-dashboard.png"),
-    github: "",
-    visual: "event",
-  },
-  {
-    id: 3,
-    title: "Prédiction de sinistre habitation",
-    year: "2025",
-    category: "IA / Data",
-    description:
-      "Projet de fouille de données visant à prédire la probabilité de sinistre habitation à partir de données réelles.",
-    technologies: ["Python", "Scikit-learn"],
-    cover: asset("images/projects/prediction-sinistre-dashboard.jpg"),
-    github: "",
-    visual: "data",
-  },
-  {
-    id: 7,
-    title: "Mission Management Platform",
-    year: "2026",
-    category: "Web",
-    description:
-      "Plateforme de planification des missions et d’affectation des employés avec authentification JWT, contrôle d’accès par rôle et règles métier transactionnelles.",
-    technologies: ["Java 21", "Spring Boot 3", "Spring Security", "Angular 19", "MySQL", "JWT"],
-    cover: asset("images/projects/mission-management-dashboard.png"),
-    github: "https://github.com/nour-karray/J2ee",
-    visual: "mission-management",
-  },
-  {
-    id: 8,
-    title: "HR Analytics Data Warehouse",
-    year: "2026",
-    category: "BI / Data",
-    description:
-      "Projet BI transformant des données RH CSV en entrepôt SQL Server via SSIS, puis en indicateurs et tableaux de bord Blazor.",
-    technologies: ["SQL Server", "SSIS", "PowerShell", "C#", "Blazor", "MudBlazor", "ApexCharts"],
-    cover: asset("images/projects/hr-analytics-dashboard.jpg"),
-    github: "https://github.com/nour-karray/HR-Analytics-Data-Warehouse",
-    visual: "hr-analytics",
-  },
+  { id: "trainflow", title: "TrainFlow AI", year: "2026", category: "Développement logiciel · IA", categories: ["software", "ai"], description: "Plateforme de gestion du cycle complet des formations, de la demande client à la génération des documents. Elle intègre l’analyse automatique des CV des formateurs et la génération de programmes de formation.", technologies: ["React", "Spring Boot", "MySQL", "Ollama", "Qwen2.5"], cover: asset("images/projects/mission-management-dashboard.png"), github: "https://github.com/nour-karray/trainflow-ai", visual: "mission-management" },
+  { id: "docia", title: "DocIA — Extraction intelligente de documents", year: "2026", category: "Développement logiciel · IA", categories: ["software", "ai"], description: "Plateforme d’extraction et de structuration de données à partir de documents PDF et d’images, combinant OCR, Docling et modèles de langage pour produire des données structurées exploitables.", technologies: ["Python", "FastAPI", "Next.js", "TypeScript", "OCR", "Docling", "Ollama", "Qwen2.5", "Gemini API"], cover: asset("images/projects/docuai-dashboard.png"), github: "https://github.com/nour-karray/AI-Document-Extractor", visual: "document-ai" },
+  { id: "mission", title: "Mission Management — Gestion des missions", year: "2026", category: "Développement logiciel", categories: ["software"], description: "Application de gestion des missions et des affectations avec API REST, authentification JWT, gestion des rôles et contrôle de la charge des collaborateurs.", technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "MySQL"], cover: asset("images/projects/mission-management-dashboard.png"), github: "https://github.com/nour-karray/J2ee", visual: "mission-management" },
+  { id: "hr-analytics", title: "HR Analytics Data Warehouse & BI Dashboard", year: "2026", category: "Data & BI", categories: ["data"], description: "Entrepôt de données RH avec processus ETL permettant d’intégrer, transformer et analyser les données afin d’alimenter un tableau de bord décisionnel.", technologies: ["SQL Server", "SSIS", "ETL", "Data Warehouse", "Blazor"], cover: asset("images/projects/hr-analytics-dashboard.jpg"), github: "https://github.com/nour-karray/HR-Analytics-Data-Warehouse", visual: "hr-analytics" },
+  { id: "smartscan", title: "SmartScan Medical OCR", year: "2026", category: "Mobile · IA", categories: ["mobile", "ai"], description: "Application mobile Flutter de scan et gestion intelligente de documents, intégrant OCR avec Google ML Kit, authentification Firebase et analyse structurée de documents médicaux.", technologies: ["Flutter", "Firebase Auth", "Google ML Kit", "OCR", "Flask", "Gemini API"], cover: asset("images/projects/smartscan-mlkit.svg"), github: "https://github.com/nour-karray/smartscan-medical-ocr", visual: "mobile-ai" },
+  { id: "event-planner", title: "Event Planner", year: "2026", category: "Développement logiciel", categories: ["software"], description: "Application web permettant de créer, gérer et suivre des événements avec inscription des utilisateurs.", technologies: ["Laravel", "MySQL"], cover: asset("images/projects/event-planner-dashboard.png"), github: "", visual: "event" },
+  { id: "drawing", title: "Drawing App JavaFX", year: "2025", category: "Développement logiciel", categories: ["software"], description: "Application JavaFX permettant de dessiner des formes géométriques, sauvegarder les dessins dans SQLite et appliquer plusieurs design patterns.", technologies: ["Java", "JavaFX", "SQLite", "JDBC", "Design Patterns"], cover: asset("images/projects/drawing-javafx-app.png"), coverFit: "contain", github: "https://github.com/nour-karray/javafx-design-patterns", visual: "java-architecture" },
+  { id: "e-sante", title: "E-Santé", year: "2025", category: "Développement logiciel", categories: ["software"], description: "Application web de gestion et de délivrance de prescriptions électroniques pour les pharmaciens.", technologies: ["ASP.NET Web API", "Entity Framework", "Blazor", "SQL Server"], cover: asset("images/projects/e-sante-dashboard.png"), github: "https://github.com/nour-karray/E-sante-app", visual: "health" },
+  { id: "riskinsight", title: "RiskInsight — Prédiction du risque de sinistre", year: "2025", category: "Intelligence artificielle", categories: ["ai"], description: "Développement et comparaison de plusieurs modèles de machine learning sur des données d’assurance habitation afin d’estimer le risque de sinistre et d’évaluer leurs performances.", technologies: ["Python", "scikit-learn", "Flask", "React"], cover: asset("images/projects/prediction-sinistre-dashboard.jpg"), github: "", visual: "data" },
 ];
 
 export const experiences = [
   {
-    company: "Institut International de Technologie à Sfax",
-    role: "Projet de Fin d’Études",
-    period: "Février 2026 — Juin 2026",
-    description:
-      "Plateforme intelligente d’extraction d’informations à partir de documents hétérogènes. Conception d’une solution capable d’extraire automatiquement des informations depuis des PDF et images pour produire des données structurées et exploitables.",
-    technologies: ["IA", "OCR", "Data extraction", "Python", "JavaScript"],
+    id: "ecocode",
+    company: "EcoCode",
+    role: "Stage d’été",
+    period: "Juin 2026 — Août 2026",
+    description: "Développé une plateforme de gestion de formations intégrant des LLM pour générer des programmes de formation et extraire des informations structurées de CV, avec validation des sorties.",
+    technologies: ["React", "Spring Boot", "MySQL", "Ollama", "LLM"],
   },
   {
+    id: "clinisys",
     company: "Clinisys",
     role: "Projet de Fin d’Étude",
     period: "Fév. 2024 — Mai 2024",
     description:
       "Développement d’une application de gestion des dossiers médicaux informatisés pour les patients externes.",
-    technologies: ["JavaScript", "Spring Boot", "Interface web"],
+    technologies: ["JavaScript", "Spring Boot", "SQL Server"],
   },
   {
+    id: "webgraphique",
     company: "Web Graphique",
     role: "Stage de Perfectionnement",
     period: "Jan. 2023 — Fév. 2023",
@@ -346,6 +123,7 @@ export const experiences = [
     technologies: ["Flutter", "Unity", "Figma"],
   },
   {
+    id: "attijari",
     company: "Attijari Bank",
     role: "Stage d’Initiation",
     period: "Jan. 2022 — Fév. 2022",
@@ -357,24 +135,22 @@ export const experiences = [
 
 export const education = [
   {
-    period: "2021",
-    degree: "Baccalauréat sciences techniques",
-    school: "Lycée Ali Bourguiba Mahres, Sfax",
-    description: "Acquisition des bases scientifiques et techniques.",
+    period: "2024 — En cours",
+    degree: "Cycle ingénieur en génie informatique — 3e année — Génie Logiciel et Informatique Décisionnelle (GLID)",
+    school: "IIT Sfax",
+    description: "Formation d’ingénieur en génie informatique.",
   },
   {
     period: "2021 — 2024",
-    degree: "Licence appliquée en Développement des Systèmes d’Information",
-    school: "Institut Supérieur des Études Technologiques de Sfax",
-    description:
-      "Formation orientée développement logiciel, bases de données et systèmes d’information.",
+    degree: "Licence appliquée en technologies de l’informatique — Développement des systèmes d’information",
+    school: "ISET Sfax",
+    description: "Formation en développement des systèmes d’information.",
   },
   {
-    period: "En cours",
-    degree: "2ème année Génie Informatique",
-    school: "Institut International des Technologies — IIT",
-    description:
-      "Approfondissement des compétences en développement web, data, IA et ingénierie logicielle.",
+    period: "2021",
+    degree: "Baccalauréat Sciences Techniques",
+    school: "Lycée Ali Bourguiba, Mahrès — Sfax",
+    description: "Baccalauréat en sciences techniques.",
   },
 ];
 
