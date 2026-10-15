@@ -17,8 +17,8 @@ export const skills = {
   languages: [
     { name: "Python", description: "Développement et IA", icon: "python" },
     { name: "Java", description: "Développement logiciel", icon: "java" },
-    { name: "JavaScript", description: "Applications web", icon: "javascript" },
-    { name: "TypeScript", description: "Applications typées", icon: "javascript" },
+    { name: "JavaScript", description: "Développement web", icon: "javascript" },
+    { name: "TypeScript", description: "Développement web typé", icon: "javascript" },
     { name: "SQL", description: "Requêtes de données", icon: "sql" },
   ],
   software: [
@@ -31,7 +31,7 @@ export const skills = {
     { name: "Machine Learning", description: "Modèles prédictifs", icon: "ml" },
     { name: "Data Mining", description: "Exploration de données", icon: "python-data" },
     { name: "Deep Learning", description: "Réseaux de neurones", icon: "dl" },
-    { name: "IA générative", description: "Génération assistée", icon: "ai" },
+    { name: "IA générative", description: "Génération de contenu", icon: "ai" },
     { name: "LLM", description: "Modèles de langage", icon: "ai" },
   ],
   aiLibraries: [
@@ -42,15 +42,15 @@ export const skills = {
   databases: [
     { name: "PostgreSQL", description: "Base relationnelle", icon: "sql" },
     { name: "MySQL", description: "Base relationnelle", icon: "mysql" },
-    { name: "SQL Server", description: "Gestion de données", icon: "sqlserver" },
+    { name: "SQL Server", description: "Base de données relationnelle", icon: "sqlserver" },
   ],
   data: [
     { name: "SSIS", description: "Intégration de données", icon: "sqlserver" },
-    { name: "ETL", description: "Flux de données", icon: "python-data" },
+    { name: "ETL", description: "Extraction · Transformation · Chargement", icon: "python-data" },
     { name: "Data Warehouse", description: "Entrepôt décisionnel", icon: "database" },
   ],
   tools: [
-    { name: "Git", description: "Versioning", icon: "git" },
+    { name: "Git", description: "Gestion de versions", icon: "git" },
     { name: "GitHub", description: "Collaboration", icon: "github" },
   ],
 };
