@@ -41,13 +41,13 @@ export const translations = {
       riskinsight: { title: "RiskInsight — Prédiction du risque de sinistre", category: "Intelligence artificielle", description: "Développé et comparé plusieurs modèles de machine learning sur des données d’assurance habitation afin d’estimer le risque de sinistre et d’évaluer leurs performances." },
     } },
     experience: { eyebrow: "Expériences", title: "Mon parcours professionnel", intro: "Des expériences qui m’ont permis d’appliquer mes compétences dans des contextes concrets.", items: {
-      ecocode: { period: "Juin 2026 — Août 2026", role: "Stage d’été", description: "Développé une plateforme de gestion de formations intégrant des LLM pour générer des programmes de formation et extraire des informations structurées de CV, avec validation des sorties." },
+      ecocode: { period: "Juin 2026 — Août 2026", role: "Stage d’été", description: "Développé une plateforme de gestion de formations intégrant des LLM pour générer des programmes de formation et extraire automatiquement des informations structurées à partir de CV." },
       clinisys: { period: "Février 2024 — Mai 2024", role: "Projet de Fin d’Études de Licence", description: "Conçu et développé un module OPD (gestion des patients externes) pour un ERP de santé, permettant de gérer leur dossier médical, les ordonnances et les diagnostics." },
       webgraphique: { period: "Janvier 2023 — Février 2023", role: "Stage de Perfectionnement", description: "Conçu les maquettes UI/UX avec Figma et développé une application mobile de restauration avec Flutter." },
       attijari: { period: "Janvier 2022 — Février 2022", role: "Stage d’Initiation", description: "Analysé les systèmes d’information de la banque et synthétisé leur organisation." },
     } },
     education: { eyebrow: "Formation", title: "Mon parcours académique", intro: "Mon parcours en informatique, du baccalauréat au cycle ingénieur.", items: [
-      { period: "2024 — En cours", degree: "Cycle ingénieur en génie informatique — 3e année", specialty: "Génie Logiciel et Informatique Décisionnelle (GLID)", school: "IIT Sfax" },
+      { period: "2024 — 2027", degree: "Cycle ingénieur en génie informatique — 3e année", specialty: "Génie Logiciel et Informatique Décisionnelle (GLID)", school: "IIT Sfax" },
       { period: "2021 — 2024", degree: "Licence appliquée en technologies de l’informatique", specialty: "Développement des systèmes d’information", school: "ISET Sfax" },
       { period: "2021", degree: "Baccalauréat — Sciences techniques", school: "Lycée Ali Bourguiba, Mahrès — Sfax" },
     ] },
@@ -74,13 +74,13 @@ export const translations = {
       riskinsight: { title: "RiskInsight — Home Claim Risk Prediction", category: "Artificial Intelligence", description: "Developed and compared several machine learning models on home insurance data to estimate claim risk and evaluate their performance." },
     } },
     experience: { eyebrow: "Experience", title: "Professional Experience", intro: "Experiences that allowed me to apply my skills in practical contexts.", items: {
-      ecocode: { period: "June 2026 — August 2026", role: "Summer Internship", description: "Developed a training management platform integrating LLMs to generate training programs and extract structured information from CVs, with output validation." },
+      ecocode: { period: "June 2026 — August 2026", role: "Summer Internship", description: "Developed a training management platform integrating LLMs to generate training programs and automatically extract structured information from CVs." },
       clinisys: { period: "February 2024 — May 2024", role: "Bachelor’s Final Project", description: "Designed and developed an OPD module (outpatient management) for a healthcare ERP, covering medical records, prescriptions and diagnoses." },
       webgraphique: { period: "January 2023 — February 2023", role: "Technical Internship", description: "Designed UI/UX mockups with Figma and developed a restaurant mobile application with Flutter." },
       attijari: { period: "January 2022 — February 2022", role: "Introductory Internship", description: "Analyzed the bank’s information systems and summarized their organization." },
     } },
     education: { eyebrow: "Education", title: "Academic Background", intro: "My academic path from technical sciences to computer engineering.", items: [
-      { period: "2024 — Present", degree: "Computer Engineering — 3rd year", specialty: "Software Engineering and Business Intelligence (GLID)", school: "IIT Sfax" },
+      { period: "2024 — 2027", degree: "Computer Engineering — 3rd year", specialty: "Software Engineering and Business Intelligence (GLID)", school: "IIT Sfax" },
       { period: "2021 — 2024", degree: "Applied Bachelor's Degree in Information Technology", specialty: "Information Systems Development", school: "ISET Sfax" },
       { period: "2021", degree: "Baccalaureate in Technical Sciences", school: "Ali Bourguiba High School, Mahrès — Sfax" },
     ] },
