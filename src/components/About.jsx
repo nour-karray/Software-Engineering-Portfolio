@@ -36,7 +36,10 @@ function About() {
               type="button"
               className="text-link"
               onClick={() =>
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                document.querySelector("#contact .contact__content")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
               }
             >
               {t.about.cta} <span>→</span>

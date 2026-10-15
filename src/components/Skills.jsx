@@ -6,6 +6,7 @@ import {
   FiDatabase,
   FiGitBranch,
   FiGithub,
+  FiRefreshCw,
   FiServer,
   FiZap,
 } from "react-icons/fi";
@@ -58,6 +59,7 @@ const skillIcons = {
   "python-data": FiDatabase,
   ocr: FiCpu,
   etl: FiDatabase,
+  agile: FiRefreshCw,
 };
 
 const skillColors = {
@@ -88,6 +90,7 @@ const skillColors = {
   "python-data": "#3b78b7",
   ocr: "#5f6fd6",
   etl: "#c44d5c",
+  agile: "#c95b78",
 };
 
 function skillCategoryId(category) {

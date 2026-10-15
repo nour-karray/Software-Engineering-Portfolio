@@ -18,12 +18,9 @@ export const skills = {
     { name: "Python", description: "Développement et IA", icon: "python" },
     { name: "Java", description: "Développement logiciel", icon: "java" },
     { name: "JavaScript", description: "Développement web", icon: "javascript" },
-    { name: "TypeScript", description: "Développement web typé", icon: "javascript" },
-    { name: "SQL", description: "Requêtes de données", icon: "sql" },
   ],
   software: [
     { name: "Spring Boot", description: "API Java", icon: "spring" },
-    { name: "FastAPI", description: "API Python", icon: "api" },
     { name: "React", description: "Interfaces web", icon: "react" },
     { name: "Angular", description: "Applications web", icon: "angular" },
   ],
@@ -52,6 +49,7 @@ export const skills = {
   tools: [
     { name: "Git", description: "Gestion de versions", icon: "git" },
     { name: "GitHub", description: "Collaboration", icon: "github" },
+    { name: "Agile/Scrum", description: "Méthodes agiles", icon: "agile" },
   ],
 };
 
